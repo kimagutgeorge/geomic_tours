@@ -1,0 +1,108 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2d2c2c;
+}
+a{
+    text-decoration: none !important;
+    transition: 0.3s ease-in-out;
+}
+a:hover{
+    color: rgb(0, 130, 189) !important;
+}
+.my-icon{
+    color: rgb(0, 130, 189);
+}
+.dft-color{
+    color: #2d2c2c !important;
+}
+.my-bg{
+    background-color: rgb(0, 130, 189);
+}
+.fw-s-bold{
+    font-weight: 600;
+}
+.w-border{
+    padding-right: 10px;
+    border-right:1px solid rgb(180, 180, 180);
+}
+.w-fit{
+    width: fit-content !important;
+}
+.btn-lang{
+    border:1px solid rgb(180, 180, 180);
+    font-size: 14px;
+    background-color: transparent;
+    height: 30px;
+    padding: 0px 5px;
+    border-radius: 15px;
+}
+.nav-bar.row{
+    padding: 10px;
+}
+.f-14{
+    font-size: 14px;
+}
+.img-logo{
+    width: 200px !important;
+    height: auto;
+}
+.nav-a{
+    font-size: 18px;
+    position: relative;
+    overflow: hidden;
+    transform: 0.3s ease;
+}
+.nav-a::before{
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(0, 130, 189);
+    z-index: 0;
+    transition: width 0.3s ease;
+}
+.nav-a:hover::before{
+    width: 100%;
+}
+.btn-default-dark {
+    padding: 10px 25px 15px 25px;
+    height: fit-content;
+    border: 0px;
+    border-radius: 28px;
+    background-color: #113d48;
+    color: white; 
+    position: relative; 
+    overflow: hidden; 
+    transition: color 0.3s ease;
+  }
+  
+  .btn-default-dark::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 0; 
+    height: 100%;
+    background-color: rgb(0, 130, 189); 
+    border-radius: 28px; 
+    z-index: 0; 
+    transition: width 0.3s ease; 
+  }
+  .btn-default-dark:hover::before {
+    width: 100%;
+  }
+  
+  .btn-default-dark span {
+    position: relative; 
+    z-index: 1; 
+  }
+  
+  .btn-default-dark span {
+    position: relative;
+    z-index: 1; 
+  }
+.btn-default-dark span{
+    font-size: 20px;
+}
