@@ -9,7 +9,7 @@ const Navbar = () => {
             <span className="w-border dft-color">
               <i className="fa-solid fa-location-dot my-icon"></i> Tom Mboya
               Street, Mombasa
-            </span>{" "}
+            </span>
             <span>
               <i className="fa-solid fa-clock my-icon"></i> Mon - Friday: 0800 h
             </span>
@@ -33,11 +33,7 @@ const Navbar = () => {
       </div>
       <div className="row col-12 d-flex flex-nowrap">
         <div className="col-3">
-          <img
-            src="../public/geomic-logo.png"
-            className="img-logo ms-4"
-            alt=""
-          />
+          <img src="geomic-logo.png" className="img-logo ms-4" alt="" />
         </div>
         <div className="col-6 d-flex">
           <a href="" className="w-fit nav-a dft-color mt-4 m2-3">
