@@ -276,7 +276,7 @@ a:hover{
     border-radius: 20px;
     border:2px solid  #bb4618;
     height: 15vh;
-    top:82.5vh;
+    top:105vh;
     z-index: 20;
 }
 .search-bar.carousel-caption .col-3{
@@ -293,6 +293,8 @@ a:hover{
 }
 .categories{
     margin-top: 20vh;
+    width:92%;
+    margin-left: 4%;
 }
 .title-italic{
     font-size: 20px;
