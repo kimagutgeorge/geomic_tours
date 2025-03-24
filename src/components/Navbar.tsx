@@ -10,7 +10,7 @@ const Navbar = () => {
               <i className="fa-solid fa-location-dot my-icon"></i> Tom Mboya
               Street, Mombasa
             </span>
-            <span>
+            <span className="ms-2">
               <i className="fa-solid fa-clock my-icon"></i> Mon - Friday: 0800 h
             </span>
           </p>

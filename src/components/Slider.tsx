@@ -1,88 +1,99 @@
 import React from "react";
+import Carousel from "react-bootstrap/Carousel";
 const Slider = () => {
   return (
-    <div
-      id="carouselExampleIndicators"
-      className="carousel slide  custom-slider"
-      data-ride="carousel"
+    <Carousel
+      className="carousel slide  custom-slider p-relative"
+      nextIcon={
+        <i className="custom-btn fa-solid fa-arrow-right p-absolute text-white custom-carousel-icon"></i>
+      }
+      prevIcon={
+        <i className="custom-btn fa-solid fa-arrow-left p-absolute text-white custom-carousel-icon"></i>
+      }
     >
-      <ol className="carousel-indicators">
-        <li
-          data-target="#carouselExampleIndicators"
-          data-slide-to="0"
-          className="active"
-        ></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div className="carousel-inner h-100">
-        <div className="carousel-item active p-relative h-100">
+      <Carousel.Item className="p-relative h-100">
+        <div className="carousel-item-inner">
           <img
             className="d-block w-100"
             src="slider/slider.jpg"
             alt="First slide"
           />
-          {/* slider caption */}
-          <div className="carousel-caption d-flex flex-column justify-content-center col-6">
-            <h5 className="fw-bold">Tour Nasi</h5>
-            <p className="fw-bold col-10 text-white">
-              Let's make your best trip with us
-            </p>
-            <div className="d-flex flex-row mt-5 carousel-btns">
-              <button className="w-fit btn-default-light text-white">
-                <span className="text-white">Explore Tours </span>
-                <span className="text-white"> &rarr;</span>
-              </button>
-              <button className="w-fit btn-default-white ms-4">
-                <span className="text-white">Contact us </span>
-                <span className="text-white"> &rarr;</span>
-              </button>
-            </div>
-          </div>
-          {/* slider dark */}
-          <div className="slider-dark-panel carousel-caption bg-black opacity-50"></div>
         </div>
-        <div className="carousel-item">
+
+        <Carousel.Caption className="carousel-caption d-flex flex-column justify-content-center col-6 with-anime">
+          <h5 className="fw-bold">Tour Nasi</h5>
+          <p className="fw-bold col-10 text-white">
+            Let's make your best trip with us
+          </p>
+          <div className="d-flex flex-row mt-5 carousel-btns">
+            <button className="w-fit btn-default-light text-white">
+              <span className="text-white">Explore Tours </span>
+              <span className="text-white"> &rarr;</span>
+            </button>
+            <button className="w-fit btn-default-white ms-4">
+              <span className="text-white">Contact us </span>
+              <span className="text-white"> &rarr;</span>
+            </button>
+          </div>
+        </Carousel.Caption>
+        <div className="slider-dark-panel carousel-caption bg-black opacity-50"></div>
+      </Carousel.Item>
+      {/* end of slider */}
+      <Carousel.Item className="p-relative h-100">
+        <div className="carousel-item-inner">
           <img
             className="d-block w-100"
             src="slider/slider2.jpg"
-            alt="Second slide"
+            alt="First slide"
           />
         </div>
-        <div className="carousel-item">
+
+        <Carousel.Caption className="carousel-caption d-flex flex-column justify-content-center col-6 with-anime">
+          <h5 className="fw-bold">Tour Nasi</h5>
+          <p className="fw-bold col-10 text-white">
+            Let's make your best trip with us
+          </p>
+          <div className="d-flex flex-row mt-5 carousel-btns">
+            <button className="w-fit btn-default-light text-white">
+              <span className="text-white">Explore Tours </span>
+              <span className="text-white"> &rarr;</span>
+            </button>
+            <button className="w-fit btn-default-white ms-4">
+              <span className="text-white">Contact us </span>
+              <span className="text-white"> &rarr;</span>
+            </button>
+          </div>
+        </Carousel.Caption>
+        <div className="slider-dark-panel carousel-caption bg-black opacity-50"></div>
+      </Carousel.Item>
+      <Carousel.Item className="p-relative h-100">
+        <div className="carousel-item-inner">
           <img
             className="d-block w-100"
             src="slider/slider3.jpg"
-            alt="Third slide"
+            alt="First slide"
           />
         </div>
-      </div>
-      <a
-        className="carousel-control-prev h-100"
-        href="#carouselExampleIndicators"
-        role="button"
-        data-slide="prev"
-      >
-        <span
-          className="carousel-control-prev-icon p-relative"
-          aria-hidden="true"
-        >
-          <i className="fa-solid fa-arrow-left p-absolute text-white"></i>
-        </span>
-        <span className="sr-only">Previous</span>
-      </a>
-      <a
-        className="carousel-control-next h-100"
-        href="#carouselExampleIndicators"
-        role="button"
-        data-slide="next"
-      >
-        <span className="carousel-control-next-icon" aria-hidden="true">
-          <i className="fa-solid fa-arrow-right p-absolute text-white"></i>
-        </span>
-        <span className="sr-only">Next</span>
-      </a>
-    </div>
+
+        <Carousel.Caption className="carousel-caption d-flex flex-column justify-content-center col-6 with-anime">
+          <h5 className="fw-bold">Tour Nasi</h5>
+          <p className="fw-bold col-10 text-white">
+            Let's make your best trip with us
+          </p>
+          <div className="d-flex flex-row mt-5 carousel-btns">
+            <button className="w-fit btn-default-light text-white">
+              <span className="text-white">Explore Tours </span>
+              <span className="text-white"> &rarr;</span>
+            </button>
+            <button className="w-fit btn-default-white ms-4">
+              <span className="text-white">Contact us </span>
+              <span className="text-white"> &rarr;</span>
+            </button>
+          </div>
+        </Carousel.Caption>
+        <div className="slider-dark-panel carousel-caption bg-black opacity-50"></div>
+      </Carousel.Item>
+    </Carousel>
   );
 };
 

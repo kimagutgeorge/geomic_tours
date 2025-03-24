@@ -8,16 +8,24 @@ a{
     transition: 0.3s ease-in-out;
 }
 a:hover{
-    color: rgb(0, 130, 189) !important;
+    color:  #bb4618 !important;
 }
 .my-icon{
-    color: rgb(0, 130, 189);
+    color:  #f58826;
 }
 .dft-color{
     color: #2d2c2c !important;
 }
+.dft-color-2{
+    color:#113d48;
+}
+.card-title{
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 0% !important;
+}
 .my-bg{
-    background-color: rgb(0, 130, 189);
+    background-color:  #bb4618;
 }
 .fw-s-bold{
     font-weight: 600;
@@ -60,7 +68,7 @@ a:hover{
     left: 0;
     width: 0;
     height: 2px;
-    background-color: rgb(0, 130, 189);
+    background-color:  #bb4618;
     z-index: 0;
     transition: width 0.4s ease;
 }
@@ -69,10 +77,10 @@ a:hover{
 }
 /* dark button */
 .btn-default-dark {
-    padding: 10px 25px 15px 25px;
+    padding: 15px 25px;
     height: fit-content;
     border: 0px;
-    border-radius: 28px;
+    border-radius: 30px;
     background-color: #113d48;
     color: white; 
     position: relative; 
@@ -87,8 +95,8 @@ a:hover{
     left: 0; 
     width: 0; 
     height: 100%;
-    background-color: rgb(0, 130, 189); 
-    border-radius: 28px; 
+    background-color:  #bb4618; 
+    border-radius: 30px;
     z-index: 0; 
     transition: width 0.4s ease; 
   }
@@ -104,11 +112,11 @@ a:hover{
 
 /* light button */
 .btn-default-light {
-    padding: 10px 25px 15px 25px;
+    padding: 15px 25px;
     height: fit-content;
     border: 0px;
-    border-radius: 28px;
-    background-color: rgb(0, 130, 189);
+    border-radius: 30px;
+    background-color:  #bb4618;
     color: white; 
     position: relative; 
     overflow: hidden; 
@@ -138,10 +146,10 @@ a:hover{
   }
 /* white button */
 .btn-default-white {
-    padding: 10px 25px 15px 25px;
+    padding: 15px 25px;
     height: fit-content;
     border: 0px;
-    border-radius: 28px;
+    border-radius: 30px;
     background-color: transparent;
     border:1px solid #ffffff;
     position: relative; 
@@ -174,8 +182,14 @@ a:hover{
   .btn-default-white:hover > span.text-white{
     color:#2d2c2c !important;
   }
-.carousel.slide.custom-slider{
-    height: 80vh;
+.carousel.slide.custom-slider,
+.carousel.slide.custom-slider .carousel-item,
+.carousel.slide.custom-slider .carousel-item .carousel-item-inner,
+.carousel.slide.custom-slider .carousel-item .carousel-caption{
+    height: 90vh;
+}
+.carousel.slide.custom-slider .carousel-item .carousel-item-inner{
+    overflow:hidden !important;
 }
 .carousel-caption{
     height: 90%;
@@ -188,15 +202,21 @@ a:hover{
     font-size: 24px;
     font-family: "Edu AU VIC WA NT Pre", cursive;
     animation-name: goUp;
-    animation-duration: 1s;
-    animation-direction: normal;
+    animation-duration: 2s;
+    animation-direction: alternate;
 }
 .carousel-caption p{
     animation-name: goUp;
-    animation-duration: 1s;
-    animation-direction: normal;
+    animation-duration: 2s;
+    animation-direction:alternate;
     font-size: 46px;
     z-index: 5;
+}
+.carousel-caption.with-anime .btn-default-white,
+.carousel-caption.with-anime .btn-default-light{
+    animation-name: goUp;
+    animation-duration: 2s;
+    animation-direction:alternate;
 }
 .slider-dark-panel.carousel-caption{
     width:100%;
@@ -234,14 +254,102 @@ a:hover{
     width: 50px;
 
 }
-.carousel-control-next-icon .fa-solid,
-.carousel-control-prev-icon .fa-solid{
+.custom-btn.fa-solid{
     z-index: 11;
     font-size: 28px;
+    padding:10px 10px;
+    background-color: #000;
+    border-radius: 5px;
 }
-.carousel-control-prev-icon:hover,
-.carousel-control-next-icon:hover{
-    background-color: rgb(0, 130, 189);
+.custom-btn.fa-solid:hover{
+    background-color: #bb4618;
     opacity: 1;
     transition: 0.4s ease-in-out;
+}
+.card-wrapper{
+    width:25%;
+}
+.search-bar.carousel-caption{
+    width:90%;
+    left:5%;
+    /* padding:20px; */
+    border-radius: 20px;
+    border:2px solid  #bb4618;
+    height: 15vh;
+    top:82.5vh;
+    z-index: 20;
+}
+.search-bar.carousel-caption .col-3{
+    width:20%;
+    border-right: 1px solid rgb(200, 200, 200);
+}
+.search-bar.carousel-caption .col-3 .form-control{
+    border:0px;
+    margin-left: 5px;
+}
+.search-bar.carousel-caption .col-3 .fa-solid{
+    margin-top: 27px;
+    margin-left: 20px;
+}
+.categories{
+    margin-top: 20vh;
+}
+.title-italic{
+    font-size: 20px;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    color:#113d48;
+}
+.section-title{
+    font-size: 32px;
+    color:#113d48;
+}
+.categories .card-text{
+    font-weight: 600;
+    color:rgb(150, 150, 150);
+    cursor: pointer;
+    font-size: 12px;
+}
+.categories .card-wrapper .card{
+    border:0px;
+}
+.categories .card-wrapper .card .card-top{
+    height: 30vh;
+}
+.categories .card-wrapper .card .card-top .card-top-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    border-radius: 10px;
+    opacity: 0; 
+    transition: opacity 0.4s ease; 
+}
+.categories .card-wrapper .card .card-top .card-img-top{
+    border-radius: 10px;
+}
+
+.categories .card-wrapper .card:hover .card-top .card-top-cover {
+    opacity: 1; 
+}
+
+.categories .card-wrapper .card .card-top .card-top-cover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0; 
+    background: rgba(255, 255, 255, 0.3); 
+    transition: height 0.4s ease;
+}
+
+.categories .card-wrapper .card:hover .card-top .card-top-cover::before {
+    height: 100%; 
+}
+.categories .category-inner{
+    margin-top: 5vh;
+    width:94%;
+    margin-left: 3%;
 }
