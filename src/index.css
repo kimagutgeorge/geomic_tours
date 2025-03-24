@@ -51,6 +51,9 @@ a:hover{
 .f-14{
     font-size: 14px;
 }
+.f-15{
+    font-size: 15px;
+}
 .img-logo{
     width: 200px !important;
     height: auto;
@@ -354,4 +357,82 @@ a:hover{
     margin-top: 5vh;
     width:94%;
     margin-left: 3%;
+}
+.mt-10-vh{
+    margin-top: 10vh;
+}
+.mt-5-vh{
+    margin-top: 5vh;
+}
+.vh-60{
+    height: 60vh;
+}
+.vh-80{
+    height: 80vh;
+}
+.destinations .card.col-4{
+    width: 30%;
+    padding:0px;
+    border:0px;
+    border-radius: 15px;
+}
+.destinations .card-1,
+.destinations .card-1-right{
+    top: 10%;
+    height: 80%;
+    z-index: 1;
+    filter: blur(6px);
+}
+.destinations .card.active{
+    left: 35%;
+}
+.destinations .card-2{
+    left: 15%;
+    filter: blur(6px);
+}
+.destinations .card-1-right{
+    left: 70%;
+}
+.destinations .card-2-right{
+    left: 55%;
+    filter: blur(6px);
+}
+.destinations .card-2,
+.destinations .card-2-right{
+    top: 5%;
+    height: 90%;
+    z-index:2;
+}
+.destinations .card.active{
+    width: 30%;
+    height: 100%;
+    z-index: 3;
+}
+.card-inner-image{
+    z-index: 1;
+}
+.card-inner-image img{
+    min-width: 100% !important;
+}
+.card-inner-dark-layout{
+    z-index: 2;
+    opacity: 0.5;
+}
+.card-inner-text{
+    z-index: 3;
+}
+.card-inner-text .btn-default-white{
+    padding: 5px 10px;
+    width:fit-content;
+}
+.cursor-follower-inner-dark-layout{
+    background-color: #113d48;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+.cursor-follower-text{
+    z-index: 2;
+}
+.cursor-follower-text-inner-inner p{
+    margin-top: 10px;
 }

@@ -52,7 +52,7 @@ const Slider = () => {
           <Carousel.Caption className="carousel-caption d-flex flex-column justify-content-center col-6 with-anime">
             <h5 className="fw-bold">Tour Nasi</h5>
             <p className="fw-bold col-10 text-white">
-              Let's make your best trip with us
+              Explore beauty of the world
             </p>
             <div className="d-flex flex-row mt-5 carousel-btns">
               <button className="w-fit btn-default-light text-white">
@@ -79,7 +79,7 @@ const Slider = () => {
           <Carousel.Caption className="carousel-caption d-flex flex-column justify-content-center col-6 with-anime">
             <h5 className="fw-bold">Tour Nasi</h5>
             <p className="fw-bold col-10 text-white">
-              Let's make your best trip with us
+              Discover, explore, and experience today
             </p>
             <div className="d-flex flex-row mt-5 carousel-btns">
               <button className="w-fit btn-default-light text-white">

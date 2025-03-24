@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 
 const Categories = () => {
   return (
-    <div className="categories mt-6">
+    <div className="categories mt-6 position-relative">
       {/* Section Heading */}
       <div className="col-12 d-flex flex-wrap justify-content-center">
         <p className="title-italic fw-bold w-100 d-flex justify-content-center">
