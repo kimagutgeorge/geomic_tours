@@ -16,6 +16,9 @@ a:hover{
 .dft-color{
     color: #2d2c2c !important;
 }
+.my-n-text{
+    padding: 0 20px;
+}
 .dft-color-2{
     color:#113d48;
 }
@@ -361,6 +364,9 @@ a:hover{
 .mt-10-vh{
     margin-top: 10vh;
 }
+.mt-20-vh{
+    margin-top: 20vh;
+}
 .mt-5-vh{
     margin-top: 5vh;
 }
@@ -435,4 +441,69 @@ a:hover{
 }
 .cursor-follower-text-inner-inner p{
     margin-top: 10px;
+}
+.plan-tour{
+    height: 90vh;
+    width:86%;
+    margin-left: 7%;
+}
+.tl-img{
+    width: 300px;
+    overflow: hidden;
+    border-radius: 150px;
+    border-bottom-right-radius: 0px;
+}
+.st-img{
+    margin-left: 20px;
+    width: 300px;
+}
+.st-img img{
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
+    border-bottom-left-radius: 0px;
+    margin-bottom: 10px;
+}
+.st-img img:nth-child(2){
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 0px;
+}
+.plan-tour .title-italic,
+.plan-tour .section-title{
+    padding: 0px 20px;
+}
+.plan-tour .section-title{
+    font-size: 42px;
+}
+.plan-tour .col-6.tour-detail{
+    width: 40%;
+}
+.plan-tour-us .section-title{
+    font-size: 24px;
+}
+.plan-tour-us{
+    padding: 0px 20px;
+}
+.plan-tour-icon{
+    width: 70px;
+    height: 70px;
+    background-color: #f58826;
+    border-radius: 50%;
+}
+.plan-tour-icon img{
+    width: 40px;
+    height: 40px;
+}
+.plan-tour-text{
+    margin-left: 10px;
+    width: 70%;
+}
+.plan-tour-text .section-title{
+    padding: 0px;
+}
+.mt-2-vh{
+    margin-top:2vh;
+}
+.plan-tour-btn{
+    margin-left: 20px;
 }

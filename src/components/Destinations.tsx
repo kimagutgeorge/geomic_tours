@@ -4,13 +4,7 @@ import { useState } from "react";
 const Destinations = () => {
   // slider
   const slider_timer = 6000;
-  //   const handleSlider = () => {
-  //     let card_1 = document.getElementsByClassName("card-1");
-  //     let card_2 = document.getElementById("card-2");
-  //     let card_active = document.getElementById("card-active");
-  //     let card_2_right = document.getElementById("card-2-right");
-  //     let card_1_right = document.getElementById("card-1-right");
-  //   };
+
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const handleMouseMove = (e) => {
     setPosition({
