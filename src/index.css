@@ -16,6 +16,9 @@ a:hover{
 .dft-color{
     color: #2d2c2c !important;
 }
+.dft-color-2{
+    color:#113d48;
+}
 .my-n-text{
     padding: 0 20px;
 }
@@ -487,12 +490,20 @@ a:hover{
 .plan-tour-icon{
     width: 70px;
     height: 70px;
-    background-color: #f58826;
+    background-color: #bb4618;
     border-radius: 50%;
+    transition: 0.2s ease-in;
+}
+.plan-tour-icon:hover{
+    background-color: #113d48;
+}
+.plan-tour-icon:hover > .plan-tour-icon-inner img{
+    transform: rotateY(180deg);
 }
 .plan-tour-icon img{
     width: 40px;
     height: 40px;
+    transition: 0.2s ease-in;
 }
 .plan-tour-text{
     margin-left: 10px;
@@ -506,4 +517,91 @@ a:hover{
 }
 .plan-tour-btn{
     margin-left: 20px;
+}
+.tours .card-wrapper{
+    width: 25%;
+    min-width: 25%;
+}
+.tours .card-wrapper .card img{
+    height: auto;
+}
+.custom-light-color{
+    font-size: 16px !important;
+    color: rgb(150, 150, 150);
+}
+.card .section-title{
+    font-size: 22px;
+    font-weight: 600;
+}
+.card .btn-default-white{
+    border: 1px solid rgb(200, 200, 200);
+    padding: 5px 10px;
+}
+.card .btn-default-white::before{
+    background-color: #bb4618;
+}
+.card .btn-default-white span{
+    font-size: 15px;
+}
+.card .btn-default-white .fa-solid{
+    font-size: 15px;
+}
+.destination-inner .card-wrapper .card{
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 10px !important;
+    width: 93%;
+    margin-left: 3.5%;
+    overflow: hidden;
+}
+.tours .card-wrapper .card:hover > img{
+    scale: 1.05;
+}
+.destination-inner .card-wrapper .card img{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+.destination-inner{
+    overflow: hidden;
+}
+.gallery .col-2{
+    width: 25%;
+}
+.gallery .col-2 img{
+    border-radius: 10px;
+    width: 94%;
+    margin-left: 2%;
+    margin-bottom: 20px;
+}
+.stat-card{
+    width: 300px;
+    height: 300px;
+    border: 1px solid #113d48;
+    border-radius: 50%;
+}
+.stat-card-inner{
+    width: 270px;
+    height: 270px;
+    margin-top: 13px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+.stat-card-inner-bg{
+    background-color: #f58826;
+    opacity: 0.3;
+    border-radius: 50%;
+    left: 13px;
+}
+.stat-card-inner-front-text h4{
+    font-size: 42px;
+    font-weight: 600px;
+}
+.stat-card-inner-front{
+    margin-left:13px;
+}
+.stat-card-inner-front-text p{
+    font-size: 18px;
+}
+.h-80-vh{
+    height: 80vh;
 }

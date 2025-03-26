@@ -5,6 +5,9 @@ import Categories from "../components/Categorires";
 import Destinations from "../components/Destinations";
 import PlanTour from "../components/PlanTour";
 import DestinationCarousel from "../components/DestinationCarousel";
+import Gallery from "../components/Gallery";
+import Stats from "../components/Stats";
+import Testimonial from "../components/Testimonial";
 function Home() {
   return (
     <>
@@ -14,6 +17,9 @@ function Home() {
       <Destinations />
       <PlanTour />
       <DestinationCarousel />
+      <Gallery />
+      <Stats />
+      <Testimonial />
     </>
   );
 }

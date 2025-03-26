@@ -2,9 +2,6 @@ import React from "react";
 import { useState } from "react";
 
 const Destinations = () => {
-  // slider
-  const slider_timer = 6000;
-
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const handleMouseMove = (e) => {
     setPosition({
