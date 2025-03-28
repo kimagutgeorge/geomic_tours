@@ -39,7 +39,7 @@ const Stats = () => {
       </div>
       {/* end of card */}
       <div className="col-3">
-        <div className="stat-card justify-content-center">
+        <div className="stat-card justify-content-center position-relative">
           <div className="stat-card-inner position-relative d-flex">
             <div className="stat-card-inner-bg position-absolute h-100 w-100"></div>
             <div className="stat-card-inner-front position-absolute h-100 w-100 d-flex justify-content-center">

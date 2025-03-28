@@ -8,6 +8,7 @@ import DestinationCarousel from "../components/DestinationCarousel";
 import Gallery from "../components/Gallery";
 import Stats from "../components/Stats";
 import Testimonial from "../components/Testimonial";
+import Footer from "../components/Footer";
 function Home() {
   return (
     <>
@@ -20,6 +21,7 @@ function Home() {
       <Gallery />
       <Stats />
       <Testimonial />
+      <Footer />
     </>
   );
 }

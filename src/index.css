@@ -3,6 +3,9 @@
     font-family: "Poppins", sans-serif;
     color: #2d2c2c;
 }
+body{
+    overflow-x: hidden;
+}
 a{
     text-decoration: none !important;
     transition: 0.3s ease-in-out;
@@ -10,11 +13,27 @@ a{
 a:hover{
     color:  #bb4618 !important;
 }
+a:hover > .fa-solid{
+    color: #bb4618;
+}
+a .fa-solid{
+    transition: 0.2s ease-in;
+}
+li{
+    list-style: none;
+}
+input:focus{
+    outline:1px solid #f58826 !important;
+    border: 1px solid transparent;
+}
 .my-icon{
     color:  #f58826;
 }
 .dft-color{
     color: #2d2c2c !important;
+}
+.dft-color-3{
+    color: #8a8e99;
 }
 .dft-color-2{
     color:#113d48;
@@ -604,4 +623,107 @@ a:hover{
 }
 .h-80-vh{
     height: 80vh;
+}
+.dot{
+    width: 8px;
+    height: 8px;
+    background-color: #f58826;
+}
+
+.testimonial-card.card .card-body img{
+    width: 60px;
+}
+.testimonial-card.card .card-body .section-title{
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+.testimonial-card.card .card-body .card-body-inner .custom-light-color{
+    margin-top: 0px;
+}
+.t-icon{
+    width: 50px;
+    height: 50px;
+    background-color: #f58826;
+    border-radius: 5px;
+}
+.testimonial-card.card .card-body .t-icon .t-icon-inner img{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+.testimonial-card.card{
+    border: 1px solid transparent !important;
+    transition: 0.3s ease-in-out;
+}
+.testimonial-card.card:hover{
+    border: 1px solid rgb(220, 220, 220) !important;
+}
+.footer input{
+    padding: 5px 20px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 30px;
+    margin-right: 10px;
+    width: 55%;
+    margin-left: 10%;
+}
+.footer button{
+    width: calc(35% - 10px);
+}
+.footer-upper{
+    padding: 50px 0px;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+.footer-bottom{
+    padding: 50px 0px;
+}
+.footer-bottom .img-logo{
+    width: 180px !important;
+}
+.footer-bottom p{
+    width: 90%;
+    margin-top: 20px;
+}
+.footer-bottom .section-title{
+    font-size: 22px;
+    font-weight: 550;
+}
+.footer-bottom li{
+    margin-bottom: 10px;
+}
+.footer-bottom .fa-brands{
+    font-size: 14px;
+    padding: 5px;
+    background-color: #113d48;
+    margin-right: 8px;
+    color: #ffffff;
+}
+.footer-bottom .touch .fa-solid{
+    font-size: 18px;
+    color: #ffffff;
+    padding: 10px;
+    background-color: #fcdabd;
+    transition: 0.2s ease-in-out;
+    border-radius: 50%;
+}
+.footer-bottom .touch .fa-solid:hover{
+    background-color: #f58826;
+}
+.touch-content{
+    width: 230px;
+    margin-bottom: 20px;
+}
+.touch-content p{
+    margin-top:0px;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    max-width: 100%;
+}
+.footer-banner{
+    background-color: #113d48;
+    padding: 15px;
+}
+.footer-banner p{
+    margin:0px 0px;
+    padding: 0px 20px;
+    width: calc(100% - 40px);
 }
