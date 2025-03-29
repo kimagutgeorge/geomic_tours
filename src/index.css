@@ -783,3 +783,26 @@ input:focus{
 .footer-bottom .categories{
     margin-top: 0px;
 }
+.banner-bg{
+    z-index: 2;
+    opacity: 0.5;
+    /* background-color: #113d48; */
+}
+.banner-front-text{
+    z-index: 4;
+}
+.banner{
+    overflow: hidden;
+}
+.banner p{
+    font-size: 20px;
+}
+.banner p span{
+    font-weight: 400;
+}
+.banner p span a:hover{
+    color: #ffffff !important;
+}
+.banner .section-title{
+    font-size: 46px;
+}

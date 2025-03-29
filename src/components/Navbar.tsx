@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 const Navbar = () => {
   return (
@@ -16,12 +17,12 @@ const Navbar = () => {
           </p>
         </div>
         <div className="col-6 flex-row-reverse d-flex  flex-nowrap">
-          <a href="/support" className="ms-2 dft-color">
+          <Link to="/support" className="ms-2 dft-color">
             support
-          </a>
-          <a href="/faqs" className="ms-2 dft-color">
+          </Link>
+          <Link to="/faqs" className="ms-2 dft-color">
             faqs
-          </a>
+          </Link>
           <select className="w-fit btn-lang">
             <option value="language">language</option>
             <option value="English">English</option>
@@ -36,27 +37,27 @@ const Navbar = () => {
           <img src="geomic-logo.png" className="img-logo ms-4" alt="" />
         </div>
         <div className="col-6 d-flex">
-          <a href="" className="w-fit nav-a dft-color mt-4 m2-3">
+          <Link to="/" className="w-fit nav-a dft-color mt-4 m2-3">
             Home
-          </a>
-          <a href="" className="w-fit nav-a dft-color mt-4 ms-3">
+          </Link>
+          <Link to="/about-us" className="w-fit nav-a dft-color mt-4 ms-3">
             About us
-          </a>
-          <a href="" className="w-fit nav-a dft-color mt-4 ms-3">
+          </Link>
+          <Link to="" className="w-fit nav-a dft-color mt-4 ms-3">
             Destinations
-          </a>
-          <a href="" className="w-fit nav-a dft-color mt-4 ms-3">
+          </Link>
+          <Link to="" className="w-fit nav-a dft-color mt-4 ms-3">
             Trips
-          </a>
-          <a href="" className="w-fit nav-a dft-color mt-4 ms-3">
+          </Link>
+          <Link to="" className="w-fit nav-a dft-color mt-4 ms-3">
             Blog
-          </a>
-          <a href="" className="w-fit nav-a dft-color mt-4 ms-3">
+          </Link>
+          <Link to="" className="w-fit nav-a dft-color mt-4 ms-3">
             Services
-          </a>
-          <a href="" className="w-fit nav-a dft-color mt-4 ms-3">
+          </Link>
+          <Link to="" className="w-fit nav-a dft-color mt-4 ms-3">
             Contact us
-          </a>
+          </Link>
         </div>
         <div className="col-3 d-flex flex-row-reverse">
           <button className="w-fit btn-default-dark text-white">
