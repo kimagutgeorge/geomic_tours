@@ -9,6 +9,7 @@ import Gallery from "../components/Gallery";
 import Stats from "../components/Stats";
 import Testimonial from "../components/Testimonial";
 import Footer from "../components/Footer";
+import BackToTop from "../components/BackToTop";
 function Home() {
   return (
     <>
@@ -22,6 +23,7 @@ function Home() {
       <Stats />
       <Testimonial />
       <Footer />
+      <BackToTop />
     </>
   );
 }
