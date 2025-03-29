@@ -69,7 +69,7 @@ const Testimonial = () => {
                   </p>
 
                   <div className="col-12 d-flex mt-5-vh d-flex justify-content-center postion-relative">
-                    <p className="dft-color-3 d-flex justify-content-center">
+                    <p className="dft-color fw-bold d-flex justify-content-center">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Qui neque reiciendis aspernatur et veniam inventore
                       cupiditate laborum quaerat aut, corporis quam in, quae,

@@ -22,39 +22,59 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="col-12 footer-bottom row">
+      </div>
+      <div className="col-12 footer-bottom">
+        <div className="categories col-12 row">
           <div className="col-4">
-            <img src="geomic-logo.png" className="img-logo ms-4" alt="" />
-            <p className="dft-color-3">
+            <img src="geomic-logo-dark.png" className="img-logo ms-4" alt="" />
+            <p className="text-white">
               Rapidiously myocardinate cross-platform intellectual capital
               model. Appropriately create interactive infrastructures
             </p>
             <div className="footer-icons d-flex flex-no-wrap">
-              <i className="fa-brands fa-facebook-f"></i>
-              <i className="fa-brands fa-instagram"></i>
-              <i className="fa-brands fa-tiktok"></i>
+              <div className="footer-icon">
+                <div className="footer-icon-inner w-100 h-100 d-flex justify-content-center">
+                  <div className="footer-icon-inner-inner h-100 d-flex flex-column justify-content-center">
+                    <i className="fa-brands fa-facebook-f"></i>
+                  </div>
+                </div>
+              </div>
+              <div className="footer-icon">
+                <div className="footer-icon-inner w-100 h-100 d-flex justify-content-center">
+                  <div className="footer-icon-inner-inner h-100 d-flex flex-column justify-content-center">
+                    <i className="fa-brands fa-instagram"></i>
+                  </div>
+                </div>
+              </div>
+              <div className="footer-icon">
+                <div className="footer-icon-inner w-100 h-100 d-flex justify-content-center">
+                  <div className="footer-icon-inner-inner h-100 d-flex flex-column justify-content-center">
+                    <i className="fa-brands fa-tiktok"></i>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div className="col-2">
             <p className="section-title">Quick Links</p>
             <li>
-              <a href="#" className="dft-color-3">
-                <i className="fa-solid fa-angle-right dft-color-3"></i> Home
+              <a href="#" className="text-white">
+                <i className="fa-solid fa-angle-right text-white"></i> Home
               </a>
             </li>
             <li>
-              <a href="#" className="dft-color-3">
-                <i className="fa-solid fa-angle-right dft-color-3"></i> About Us
+              <a href="#" className="text-white">
+                <i className="fa-solid fa-angle-right text-white"></i> About Us
               </a>
             </li>
             <li>
-              <a href="#" className="dft-color-3">
-                <i className="fa-solid fa-angle-right dft-color-3"></i> Services
+              <a href="#" className="text-white">
+                <i className="fa-solid fa-angle-right text-white"></i> Services
               </a>
             </li>
             <li>
-              <a href="#" className="dft-color-3">
-                <i className="fa-solid fa-angle-right dft-color-3"></i> Contact
+              <a href="#" className="text-white">
+                <i className="fa-solid fa-angle-right text-white"></i> Contact
               </a>
             </li>
           </div>
@@ -65,13 +85,13 @@ const Footer = () => {
                 <i className="fa-solid fa-phone"></i>
               </div>
               <div className="touch-content d-block">
-                <p className="dft-color-3 f-15">
-                  <a href="" className="dft-color-3">
+                <p className="text-white f-15">
+                  <a href="" className="text-white">
                     +(254) 759 200 998
                   </a>
                 </p>
-                <p className="dft-color-3 f-15">
-                  <a href="" className="dft-color-3">
+                <p className="text-white f-15">
+                  <a href="" className="text-white">
                     +(254) 789 373 600
                   </a>
                 </p>
@@ -82,13 +102,13 @@ const Footer = () => {
                 <i className="fa-solid fa-envelope"></i>
               </div>
               <div className="touch-content d-block">
-                <p className="dft-color-3 f-15">
-                  <a href="" className="dft-color-3">
+                <p className="text-white f-15">
+                  <a href="" className="text-white">
                     info@geomictours.com
                   </a>
                 </p>
-                <p className="dft-color-3 f-15">
-                  <a href="" className="dft-color-3">
+                <p className="text-white f-15">
+                  <a href="" className="text-white">
                     geomictours@gmail.com
                   </a>
                 </p>
@@ -99,27 +119,27 @@ const Footer = () => {
                 <i className="fa-solid fa-envelope"></i>
               </div>
               <div className="touch-content d-block">
-                <p className="dft-color-3 f-15">Tom Mboya Street, Mombasa</p>
+                <p className="text-white f-15">Tom Mboya Street, Mombasa</p>
               </div>
             </div>
           </div>
           <div className="col-3">
             <p className="section-title">Latest Blogs</p>
             <li>
-              <a href="#" className="dft-color-3">
-                <i className="fa-solid fa-angle-right dft-color-3"></i> Wild
+              <a href="#" className="text-white">
+                <i className="fa-solid fa-angle-right text-white"></i> Wild
                 Beasts of Amboseli
               </a>
             </li>
             <li>
-              <a href="#" className="dft-color-3">
-                <i className="fa-solid fa-angle-right dft-color-3"></i>{" "}
+              <a href="#" className="text-white">
+                <i className="fa-solid fa-angle-right text-white"></i>{" "}
                 Endangered kiwis
               </a>
             </li>
             <li>
-              <a href="#" className="dft-color-3">
-                <i className="fa-solid fa-angle-right dft-color-3"></i> 5 Reason
+              <a href="#" className="text-white">
+                <i className="fa-solid fa-angle-right text-white"></i> 5 Reason
                 to on a safari in Tsavo East
               </a>
             </li>
