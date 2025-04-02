@@ -43,7 +43,7 @@ const Navbar = () => {
           <Link to="/about-us" className="w-fit nav-a dft-color mt-4 ms-3">
             About us
           </Link>
-          <Link to="" className="w-fit nav-a dft-color mt-4 ms-3">
+          <Link to="/destinations" className="w-fit nav-a dft-color mt-4 ms-3">
             Destinations
           </Link>
           <Link to="" className="w-fit nav-a dft-color mt-4 ms-3">

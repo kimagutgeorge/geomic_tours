@@ -4,15 +4,17 @@ import HomeBanner from "../components/HomeBanner";
 import PlanTour from "../components/PlanTour";
 import Footer from "../components/Footer";
 import BackToTop from "../components/BackToTop";
-interface Props {
-  page_name: string;
-}
-const About = ({ page_name }: Props) => {
+import Services from "../components/Services";
+import DestinationCarousel from "../components/DestinationCarousel";
+
+const About = () => {
   return (
     <>
       <Navbar />
-      <HomeBanner />
+      <HomeBanner page_name="About us" />
       <PlanTour />
+      <Services />
+      <DestinationCarousel />
       <Footer />
       <BackToTop />
     </>

@@ -1,6 +1,11 @@
 import React from "react";
 import { Link } from "react-router";
-const HomeBanner = () => {
+
+interface BannerProps {
+  page_name: string;
+}
+
+const HomeBanner = ({ page_name }: BannerProps) => {
   return (
     <div className="col-12 position-relative vh-60 banner">
       <div className="w-100 h-100 banner-bg bg-black position-absolute"></div>
@@ -15,7 +20,7 @@ const HomeBanner = () => {
                 Home |
               </Link>
             </span>
-            <span className="text-white ms-2"> About Us</span>
+            <span className="text-white ms-2"> {page_name}</span>
           </p>
         </div>
       </div>

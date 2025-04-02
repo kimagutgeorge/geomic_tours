@@ -705,8 +705,11 @@ input:focus{
     border-bottom: 1px solid rgb(200, 200, 200);
 }
 .footer-bottom{
-    padding: 50px 0px;
     background-color: #113d48;
+}
+.footer-bottom .categories{
+    border-bottom: 1px solid rgb(180, 180, 180);
+    padding: 50px 0px;
 }
 .footer-bottom .img-logo{
     width: 180px !important;
@@ -822,6 +825,26 @@ input:focus{
     animation-duration: 0.5s;
     animation-direction: alternate;
     animation-iteration-count: 1;
+}
+.services .destination-inner .card-wrapper .card{
+    border:0px;
+    background-color: #d8f3f9;
+}
+.services .destination-inner .card-wrapper .card .btn-default-white{
+    border-color: #113d48;
+    padding: 10px 15px;
+}
+.services .destination-inner .card-wrapper .card .btn-default-white:hover::before{
+    border-color: transparent;
+    background-color: #113d48;
+}
+.services .destination-inner .card-wrapper .card .btn-default-white:hover > span.dft-color,
+.services .destination-inner .card-wrapper .card .btn-default-white:hover > span.dft-color .fa-solid{
+    color: #ffffff !important;
+    transition: 0.3s ease-in;
+}
+.services .destination-inner .card-wrapper{
+    margin-bottom: 25px;
 }
 @keyframes backToTop {
     0%{
