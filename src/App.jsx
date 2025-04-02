@@ -7,7 +7,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import Home from "./views/Home"
 import About from "./views/About";
-import NotFound from "./components/NotFound";
+import NotFound from "./views/NotFound";
+import DestinationPage from "./views/Destinations";
 
 
 function App() {
@@ -20,6 +21,11 @@ const router = createBrowserRouter([
   {
     path: "/about-us",
     element: <About/>,
+    errorElement: <NotFound/>
+  },
+  {
+    path: "/destinations",
+    element: <DestinationPage/>,
     errorElement: <NotFound/>
   }
 ]);

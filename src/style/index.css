@@ -359,7 +359,6 @@ input:focus{
 .categories .card-wrapper .card .card-top .card-img-top{
     border-radius: 10px;
 }
-
 .categories .card-wrapper .card:hover .card-top .card-top-cover {
     opacity: 1; 
 }
@@ -397,6 +396,9 @@ input:focus{
 }
 .vh-80{
     height: 80vh;
+}
+.vh-70{
+    height: 70vh;
 }
 .destinations .card.col-4{
     width: 30%;
@@ -661,7 +663,9 @@ input:focus{
     height: 8px;
     background-color: #f58826;
 }
-
+.error-img{
+    width: 96%;
+}
 .testimonial-card.card .card-body img{
     width: 60px;
 }
@@ -742,6 +746,12 @@ input:focus{
     animation-duration: 0.3s;
     animation-direction: alternate;
     animation-iteration-count: 1;
+}
+.error-inner .btn-default-dark{
+    width: fit-content;
+}
+.h-100-vh{
+    height: 100vh;
 }
 @keyframes goDown {
     0%{
@@ -843,10 +853,54 @@ input:focus{
     color: #ffffff !important;
     transition: 0.3s ease-in;
 }
+.error-inner .section-title.fw-bold{
+    font-size: 46px;
+}
 .services .destination-inner .card-wrapper{
     margin-bottom: 25px;
 }
-@keyframes backToTop {
+
+  .back-to-top-icon {
+    font-size: 20px;
+  }
+  .back-to-top-inner{
+    background-color: #0a637a;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+.destinations.destination-list .destination-inner .card-wrapper{
+    width: 33.33%;
+    margin-bottom: 50px;
+}
+.destinations.destination-list .destination-inner .card-wrapper .card{
+    border:0;
+}
+.destinations.destination-list .destination-inner .card-wrapper .card .card-img-top{
+    height: 100% !important;
+    width: auto;
+}
+.destination-card-text{
+    z-index: 3;
+    margin-left: 3%;
+    margin-top: 10px;
+    padding:3px 15px;
+    background-color: #f58826;
+    border-radius: 14px;
+}
+.destinations.destination-list .destination-inner .card-wrapper .card-body a{
+    font-size: 20px;
+    margin-left: 3%;
+}
+.destinations.destination-list .destination-inner .card-wrapper .card-body a .fa-solid{
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+.destinations.destination-list .destination-inner .card-wrapper .card-body a:hover .fa-solid{
+    margin-left: 5px;
+}
+
+  /* responsiveness */
+  @keyframes backToTop {
     0%{
       margin-top: -40px;
       opacity: 0;  
@@ -856,11 +910,3 @@ input:focus{
         opacity: 1;  
     }
 }
-  .back-to-top-icon {
-    font-size: 20px;
-  }
-  .back-to-top-inner{
-    background-color: #0a637a;
-    border-radius: 50%;
-    cursor: pointer;
-  }

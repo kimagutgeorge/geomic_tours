@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 const Footer = () => {
   return (
@@ -58,24 +59,24 @@ const Footer = () => {
           <div className="col-2">
             <p className="section-title">Quick Links</p>
             <li>
-              <a href="#" className="text-white">
+              <Link to="/" className="text-white">
                 <i className="fa-solid fa-angle-right text-white"></i> Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="text-white">
+              <Link to="/about-us" className="text-white">
                 <i className="fa-solid fa-angle-right text-white"></i> About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="text-white">
+              <Link to="/services" className="text-white">
                 <i className="fa-solid fa-angle-right text-white"></i> Services
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="text-white">
+              <Link to="/contact-us" className="text-white">
                 <i className="fa-solid fa-angle-right text-white"></i> Contact
-              </a>
+              </Link>
             </li>
           </div>
           <div className="col-3 touch">
@@ -86,14 +87,14 @@ const Footer = () => {
               </div>
               <div className="touch-content d-block">
                 <p className="text-white f-15">
-                  <a href="" className="text-white">
+                  <Link to="" className="text-white">
                     +(254) 759 200 998
-                  </a>
+                  </Link>
                 </p>
                 <p className="text-white f-15">
-                  <a href="" className="text-white">
+                  <Link to="" className="text-white">
                     +(254) 789 373 600
-                  </a>
+                  </Link>
                 </p>
               </div>
             </div>
@@ -103,14 +104,14 @@ const Footer = () => {
               </div>
               <div className="touch-content d-block">
                 <p className="text-white f-15">
-                  <a href="" className="text-white">
+                  <Link to="" className="text-white">
                     info@geomictours.com
-                  </a>
+                  </Link>
                 </p>
                 <p className="text-white f-15">
-                  <a href="" className="text-white">
+                  <Link to="" className="text-white">
                     geomictours@gmail.com
-                  </a>
+                  </Link>
                 </p>
               </div>
             </div>
@@ -126,22 +127,22 @@ const Footer = () => {
           <div className="col-3">
             <p className="section-title">Latest Blogs</p>
             <li>
-              <a href="#" className="text-white">
+              <Link to="#" className="text-white">
                 <i className="fa-solid fa-angle-right text-white"></i> Wild
                 Beasts of Amboseli
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="text-white">
+              <Link to="#" className="text-white">
                 <i className="fa-solid fa-angle-right text-white"></i>{" "}
                 Endangered kiwis
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="text-white">
+              <Link to="#" className="text-white">
                 <i className="fa-solid fa-angle-right text-white"></i> 5 Reason
                 to on a safari in Tsavo East
-              </a>
+              </Link>
             </li>
           </div>
         </div>
