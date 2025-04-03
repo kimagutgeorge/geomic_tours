@@ -16,7 +16,7 @@ const NotFound = () => {
               Unfortunately, something went wrong and this page does not exist.
               Try using the search or return to the previous page.
             </p>
-            <Link to="/" className="btn btn-default-dark">
+            <Link to="/" className="btn-default-dark">
               <span className="text-white">
                 <i className="fa-solid fa-arrow-left text-white"></i> Go Back
                 Home

@@ -117,7 +117,7 @@ const Footer = () => {
             </div>
             <div className="d-flex flex-no-wrap">
               <div className="touch-icon">
-                <i className="fa-solid fa-envelope"></i>
+                <i className="fa-solid fa-location-dot"></i>
               </div>
               <div className="touch-content d-block">
                 <p className="text-white f-15">Tom Mboya Street, Mombasa</p>

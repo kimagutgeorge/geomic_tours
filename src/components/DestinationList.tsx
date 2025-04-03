@@ -5,10 +5,10 @@ const DestinationList = () => {
       <div className="destinations destination-list categories row mt-20-vh position-relative">
         <div className="col-12 d-flex flex-wrap justify-content-center">
           <p className="title-italic fw-bold w-100 d-flex justify-content-center">
-            Services We Offer
+            Top Destinations
           </p>
           <h5 className="section-title fw-bold justify-content-center">
-            Our Amazing Services
+            Tour Destinations
           </h5>
         </div>
         <div className="destination-inner tours mt-10-vh col-100 d-flex flex-wrap">

@@ -9,6 +9,7 @@ import Home from "./views/Home"
 import About from "./views/About";
 import NotFound from "./views/NotFound";
 import DestinationPage from "./views/Destinations";
+import Trips from "./views/Trips";
 
 
 function App() {
@@ -26,6 +27,11 @@ const router = createBrowserRouter([
   {
     path: "/destinations",
     element: <DestinationPage/>,
+    errorElement: <NotFound/>
+  },
+  {
+    path: "/trips",
+    element: <Trips/>,
     errorElement: <NotFound/>
   }
 ]);

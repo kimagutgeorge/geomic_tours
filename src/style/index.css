@@ -22,9 +22,19 @@ a .fa-solid{
 li{
     list-style: none;
 }
-input:focus{
+input:focus,
+select:focus{
     outline:1px solid #f58826 !important;
     border: 1px solid transparent;
+}
+select{
+    padding: 10px;
+    border-radius: 5px;
+    border:1px solid rgb(200, 200, 200);
+}
+input[type=checkbox],
+input[type=range]{
+    outline: none !important;
 }
 .my-icon{
     color:  #f58826;
@@ -78,6 +88,15 @@ input:focus{
 }
 .f-15{
     font-size: 15px;
+}
+.f-12{
+    font-size: 12px;
+}
+.f-10{
+    font-size: 10px;
+}
+.f-8{
+    font-size: 8px;
 }
 .img-logo{
     width: 200px !important;
@@ -390,6 +409,9 @@ input:focus{
 }
 .mt-5-vh{
     margin-top: 5vh;
+}
+.vh-50{
+    height: 50vh;
 }
 .vh-60{
     height: 60vh;
@@ -883,7 +905,7 @@ input:focus{
     z-index: 3;
     margin-left: 3%;
     margin-top: 10px;
-    padding:3px 15px;
+    padding:2px 15px;
     background-color: #f58826;
     border-radius: 14px;
 }
@@ -898,6 +920,228 @@ input:focus{
 .destinations.destination-list .destination-inner .card-wrapper .card-body a:hover .fa-solid{
     margin-left: 5px;
 }
+.filter-inner.card{
+    border-color: rgb(220, 220, 220);
+    padding: 10px 15px;
+    width: 100%;
+    height: fit-content;
+
+}
+.filter-inner.card h4.section-title{
+    font-size: 20px;
+}
+.filter-inner.card .col-12{
+    border-bottom: 1px solid rgb(220, 220, 220);
+    padding: 15px 0px;
+}
+.filter-inner.card .section-title .fa-solid{
+    font-size: 16px;
+}
+.filter-inner.card .col-12 .filter-item .f-width.d-flex{
+    cursor: pointer;
+}
+.filter-item-list{
+    width: 95%;
+    margin-left: 5%;
+    max-height: 0;
+    transition: max-height 0.4s ease-in-out;
+    overflow: hidden;
+}
+.filter-item-list li{
+    padding: 5px 0px;
+}
+.filter-inner.card .col-5 .f-14{
+    font-size: 12px !important;
+    cursor: pointer;
+    text-decoration: underline
+}
+.filter-inner.card .col-5 .f-14:hover{
+    color:#f58826 !important;
+}
+.filter-page-banner.card{
+    padding: 15px;
+}
+.filter-item-list.show {
+    max-height: 400px; /* Adjust based on content */
+  }
+.filter-card{
+    width: fit-content;
+    border-radius: 5px;
+    padding: 15px;
+    border: 1px solid rgb(220, 220, 220);
+    right: 0%;
+    z-index: 5;
+}
+.filter-card.show{
+    display: none;
+}
+.filter-card li{
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.fiter-page-body .card-wrapper{
+    width: 50%;
+    margin-bottom: 30px;
+    
+}
+.fiter-page-body .card-wrapper .card{
+    width: 95%;
+    margin-left: 0%;
+    transition: 0.3s ease-in-out;
+}
+.fiter-page-body .card-wrapper .card:hover{
+    box-shadow: 0px 4px 10px rgb(220, 220, 220);
+}
+.fiter-page-body .card-wrapper .card:hover .card-img-top{
+    transform: scale(1.02);
+}
+.tour-card h5{
+    cursor: pointer;
+    width: fit-content;
+}
+.filter-card p{
+    margin:0px;
+}
+.filter-card .w-100 .col-7{
+    margin:0px !important;
+    border-right: 1px solid rgb(200, 200, 200);
+}
+.tour-card .card-body .col-7 p .fa-solid{
+    color:#f58826;
+    margin-right: 7px;
+}
+.tour-card .col-5 .destination-card-text{
+    width: fit-content;
+}
+
+.card-body-fixed{
+    height: 190px;
+    overflow: hidden;
+}
+.card-btn{
+    border-top: 1px solid rgb(220, 220, 220);
+} 
+.calendar-days .ms-2{
+    margin-top:5px;
+}
+.range-slider-container {
+    font-family: 'Arial', sans-serif;
+    border-radius: 2px;
+    background: white;
+  }
+  .slider-wrapper-relative {
+    position: relative;
+    padding: 20px 10px 30px;
+  }
+  
+  .custom-slider {
+    width: 100%;
+    height: 4px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: rgb(230, 230, 230);
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 30px;
+  }
+  
+  .custom-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #bb4618;
+    cursor: pointer;
+    border: 3px solid white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .custom-slider::-webkit-slider-thumb:hover {
+    transform: scale(1.1);
+    background: #3a8bda;
+  }
+  
+  /* Track fill */
+  .custom-slider {
+    position: relative;
+  }
+  
+  .custom-slider::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: calc((var(--value) - 1) / 6 * 100%);
+    background: #bb4618;
+    border-radius: 10px;
+    pointer-events: none;
+  }
+  
+  .value-bubble {
+    position: absolute;
+    top: -10px;
+    transform: translateX(-50%);
+    background:#f58826;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+    transition: left 0.2s ease;
+  }
+  
+  .slider-labels {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: -25px;
+  }
+  
+  .label {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #e0e0e0;
+    color: #666;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 12px;
+  }
+  
+  .label.active {
+    background: #4facfe;
+    color: white;
+    transform: scale(1.1);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   /* responsiveness */
   @keyframes backToTop {
