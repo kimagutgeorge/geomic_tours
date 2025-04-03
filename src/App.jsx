@@ -10,6 +10,7 @@ import About from "./views/About";
 import NotFound from "./views/NotFound";
 import DestinationPage from "./views/Destinations";
 import Trips from "./views/Trips";
+import Blogs from "./views/Blogs";
 
 
 function App() {
@@ -21,18 +22,19 @@ const router = createBrowserRouter([
   },
   {
     path: "/about-us",
-    element: <About/>,
-    errorElement: <NotFound/>
+    element: <About/>
   },
   {
     path: "/destinations",
-    element: <DestinationPage/>,
-    errorElement: <NotFound/>
+    element: <DestinationPage/>
   },
   {
     path: "/trips",
-    element: <Trips/>,
-    errorElement: <NotFound/>
+    element: <Trips/>
+  },
+  {
+    path: "/blogs",
+    element: <Blogs/>
   }
 ]);
 

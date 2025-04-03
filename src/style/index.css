@@ -235,7 +235,13 @@ input[type=range]{
 .carousel.slide.custom-slider .carousel-item .carousel-caption{
     height: 90vh;
 }
-.carousel.slide.custom-slider .carousel-item .carousel-item-inner{
+.blog-card .carousel.slide.custom-slider,
+.blog-card .carousel.slide.custom-slider .carousel-item{
+    height: 60vh;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.blog-card .carousel.slide.custom-slider .carousel-item .carousel-item-inner{
     overflow:hidden !important;
 }
 .carousel-caption{
@@ -312,6 +318,13 @@ input[type=range]{
     background-color: #bb4618;
     opacity: 1;
     transition: 0.4s ease-in-out;
+}
+.blogs .custom-btn.fa-solid,
+.custom-btn.fa-solid:hover{
+    border-radius: 50%;
+}
+.blog-card{
+    margin-bottom: 20px;
 }
 .card-wrapper{
     width:25%;

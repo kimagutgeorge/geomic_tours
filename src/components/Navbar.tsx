@@ -49,7 +49,7 @@ const Navbar = () => {
           <Link to="/trips" className="w-fit nav-a dft-color mt-4 ms-3">
             Trips
           </Link>
-          <Link to="/blog" className="w-fit nav-a dft-color mt-4 ms-3">
+          <Link to="/blogs" className="w-fit nav-a dft-color mt-4 ms-3">
             Blog
           </Link>
           <Link to="/contact-us" className="w-fit nav-a dft-color mt-4 ms-3">
