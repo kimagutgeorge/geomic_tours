@@ -77,7 +77,22 @@ const BlogsContent = () => {
               </div>
             </div>
           </div>
-          <div className="col-4 d-flex justify-content-center">There</div>
+          <div className="col-4 d-flex justify-content-center">
+            <div className="search-card w-90" style={{ height: "fit-content" }}>
+              <p className="section-title position-relative">
+                <span>Search</span>
+                <div className="underline position-absolute">
+                  <div className="underline-inner h-100"></div>
+                </div>
+              </p>
+              <div className="w-100 search-bg d-flex flex-no-wrap justify-content-end">
+                <input type="text" />
+                <button className="btn-default-dark">
+                  <span className="text-white">Search</span>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>
