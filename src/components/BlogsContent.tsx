@@ -77,19 +77,83 @@ const BlogsContent = () => {
               </div>
             </div>
           </div>
-          <div className="col-4 d-flex justify-content-center">
+          <div className="col-4 search-side">
             <div className="search-card w-90" style={{ height: "fit-content" }}>
-              <p className="section-title position-relative">
+              <h4 className="section-title position-relative">
                 <span>Search</span>
                 <div className="underline position-absolute">
                   <div className="underline-inner h-100"></div>
                 </div>
-              </p>
+              </h4>
               <div className="w-100 search-bg d-flex flex-no-wrap justify-content-end">
                 <input type="text" />
                 <button className="btn-default-dark">
                   <span className="text-white">Search</span>
                 </button>
+              </div>
+            </div>
+            <div className="card mt-4">
+              <h4 className="section-title position-relative">
+                <span>Categories</span>
+                <div className="underline position-absolute">
+                  <div className="underline-inner h-100"></div>
+                </div>
+              </h4>
+              <div className="col-12 w-100 d-flex mt-4 cat-item">
+                <div className="col-10">Adventure Tours</div>
+                <div className="col-2 d-flex justify-content-end">4</div>
+              </div>
+              <div className="col-12 w-100 d-flex mt-4 cat-item">
+                <div className="col-10">Excursions</div>
+                <div className="col-2 d-flex justify-content-end">2</div>
+              </div>
+            </div>
+            <div className="card mt-4">
+              <h4 className="section-title position-relative">
+                <span>Recent Posts</span>
+                <div className="underline position-absolute">
+                  <div className="underline-inner h-100"></div>
+                </div>
+              </h4>
+              <div className="recent-post w-100 mt-4">
+                <div className="w-100 d-flex flex-no-wrap mt-4">
+                  <div className="col-4 blog-img">
+                    <img
+                      src="slider/slider2.jpg"
+                      className="h-100 w-100"
+                      alt=""
+                    />
+                  </div>
+                  <div className="col-8">
+                    <p className="section-title">
+                      Exploring The Green Spaces Of Realar
+                    </p>
+                    <p className="custom-light-color mt-2">
+                      <i className="fa-solid fa-calendar custom-light-color"></i>{" "}
+                      July 10, 2024
+                    </p>
+                  </div>
+                </div>
+                {/* end of card */}
+                <div className="w-100 d-flex flex-no-wrap mt-4">
+                  <div className="col-4 blog-img">
+                    <img
+                      src="slider/slider3.jpg"
+                      className="h-100 w-100"
+                      alt=""
+                    />
+                  </div>
+                  <div className="col-8">
+                    <p className="section-title">
+                      Exploring The Green Spaces Of Realar
+                    </p>
+                    <p className="custom-light-color mt-2">
+                      <i className="fa-solid fa-calendar custom-light-color"></i>{" "}
+                      July 10, 2024
+                    </p>
+                  </div>
+                </div>
+                {/* contents here */}
               </div>
             </div>
           </div>

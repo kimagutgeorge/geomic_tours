@@ -328,16 +328,27 @@ input[type=range]{
     background-color:#d8f3f9;
     width: 96%;
     border-radius: 8px;
+    margin-left: 2%;
 }
-.search-card p.section-title{
+.search-card h4.section-title{
     font-size: 25px;
-    font-weight: 600;
 }
 .underline{
     margin-top: 10px;
     height: 5px;
     width: 100%;
     background-color: #e9f5f7;
+}
+.search-side .card{
+    padding: 20px;
+    width: 96%;
+    border-radius: 8px; 
+    margin-left: 2%;
+}
+.cat-item{
+    padding: 10px 0px;
+    border-bottom: 1px solid rgb(220, 220, 220);
+    cursor: pointer;
 }
 .underline-inner{
     background-color: #113d48;
@@ -1171,10 +1182,23 @@ input[type=range]{
     color: white;
     transform: scale(1.1);
   }
-
-
-
-
+  .blog-img{
+    width: 80px !important;
+    height: 80px !important;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .recent-post .section-title{
+    font-size: 16px;
+    cursor: pointer;
+  }
+.recent-post .col-8{
+    width: calc(100% - 115px);
+    margin-left: 15px;
+}
+.recent-post p{
+    margin-bottom: 0px;
+}
 
 
 
