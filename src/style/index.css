@@ -27,6 +27,13 @@ select:focus{
     outline:1px solid #f58826 !important;
     border: 1px solid transparent;
 }
+.contact-control:focus{
+    outline: none !important;
+}
+.contact-control{
+    padding:10px;
+    border:1px solid transparent;
+}
 select{
     padding: 10px;
     border-radius: 5px;
@@ -1187,6 +1194,7 @@ input[type=range]{
     height: 80px !important;
     border-radius: 5px;
     overflow: hidden;
+    transition: 0.4s ease-in-out;
   }
   .recent-post .section-title{
     font-size: 16px;
@@ -1199,7 +1207,53 @@ input[type=range]{
 .recent-post p{
     margin-bottom: 0px;
 }
-
+.contact-card.recent-post{
+    padding: 20px;
+}
+.contact-card.recent-post .blog-img{
+    border-radius: 50%;
+    background-color: #113d48;
+}
+.blog-img-inner .fa-solid{
+    font-size: 22px;
+}
+.contacts .recent-post.card{
+    width: 28%;
+    margin-right: 1%;
+}
+.contact-card.recent-post .blog-img{
+    width: 60px !important;
+    height: 60px !important;
+}
+.contact-card.recent-post .blog-img:hover{
+    background-color: #f58826;
+}
+form.form-contact{
+    width: 60%;
+}
+form .contact-card{
+    padding: 20px;
+}
+form .contact-card .col-6{
+    width: calc(50% - 20px);
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+form .contact-card .col-12{
+    width: calc(100% - 30px);
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+form .form-group{
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 8px;
+}
+.form-icon{
+    font-size: 22px !important;
+}
+form .contact-card .col-12 textarea{
+    height: 150px;
+}
 
 
 

@@ -1,19 +1,19 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import HomeBanner from "../components/HomeBanner";
-import BlogsContent from "../components/BlogsContent";
+import ContactsContent from "../components/ContactsContent";
 import Footer from "../components/Footer";
 import BackToTop from "../components/BackToTop";
 
-const Blogs = () => {
+const Contacts = () => {
   return (
     <>
       <Navbar />
-      <HomeBanner page_name="Blogs" />
-      <BlogsContent />
+      <HomeBanner page_name="Contact us" />
+      <ContactsContent />
       <Footer />
       <BackToTop />
     </>
   );
 };
-export default Blogs;
+export default Contacts;

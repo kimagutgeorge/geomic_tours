@@ -8,7 +8,7 @@ const Trips = () => {
   return (
     <>
       <Navbar />
-      <HomeBanner page_name="Trips" page_title="Trips" />
+      <HomeBanner page_name="Trips" />
       <TripsContent />
       <Footer />
       <BackToTop />

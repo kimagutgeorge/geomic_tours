@@ -11,6 +11,7 @@ import NotFound from "./views/NotFound";
 import DestinationPage from "./views/Destinations";
 import Trips from "./views/Trips";
 import Blogs from "./views/Blogs";
+import Contacts from "./views/Contact";
 
 
 function App() {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
   {
     path: "/blogs",
     element: <Blogs/>
+  },
+  {
+    path: "/contact-us",
+    element: <Contacts/>
   }
 ]);
 

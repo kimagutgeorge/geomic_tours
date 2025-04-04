@@ -11,7 +11,7 @@ const About = () => {
   return (
     <>
       <Navbar />
-      <HomeBanner page_name="About us" page_title="About Us" />
+      <HomeBanner page_name="About us" />
       <PlanTour />
       <Services />
       <DestinationCarousel />
