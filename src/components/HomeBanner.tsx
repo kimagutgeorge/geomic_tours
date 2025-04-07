@@ -1,11 +1,12 @@
 import React from "react";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 interface BannerProps {
   page_name: string;
+  destination_name?: string;
 }
 
-const HomeBanner = ({ page_name }: BannerProps) => {
+const HomeBanner = ({ page_name, destination_name }: BannerProps) => {
   return (
     <div className="col-12 position-relative vh-50 banner">
       <div className="w-100 h-100 banner-bg bg-black position-absolute"></div>
@@ -16,18 +17,31 @@ const HomeBanner = ({ page_name }: BannerProps) => {
           </h2>
           <p className="text-white w-100 d-flex justify-content-center">
             <span>
-              <Link to="/" className="text-white">
+              <Link to="/" className="text-white text-decoration-none">
+                {" "}
+                {/* Added text-decoration-none */}
                 Home |
               </Link>
             </span>
-            <span className="text-white ms-2"> {page_name}</span>
+            <Link to="/trips">
+              <span className="text-white ms-2"> {page_name}</span>
+            </Link>
+            {destination_name && (
+              <span className="text-white ms-2">| {destination_name}</span>
+            )}
           </p>
         </div>
       </div>
       <div className="w-100 h-100 banner-img-container">
-        <img src="slider/safari.jpg" className="w-100" />
+        <img
+          src="slider/safari.jpg"
+          alt="Banner"
+          className="w-100 h-100 object-fit-cover"
+        />{" "}
+        {/* Added alt and improved styling */}
       </div>
     </div>
   );
 };
+
 export default HomeBanner;

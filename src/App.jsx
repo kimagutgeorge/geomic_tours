@@ -1,11 +1,10 @@
 import {
   createBrowserRouter,
   RouterProvider,
-} from "react-router";
-
+} from "react-router-dom"; // ✅ Only use this
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Home from "./views/Home"
+import Home from "./views/Home";
 import About from "./views/About";
 import NotFound from "./views/NotFound";
 import DestinationPage from "./views/Destinations";
@@ -13,45 +12,44 @@ import Trips from "./views/Trips";
 import Blogs from "./views/Blogs";
 import Contacts from "./views/Contact";
 
-
-function App() {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home/>,
-    errorElement: <NotFound/>
+    element: <Home />,
+    errorElement: <NotFound />,
   },
   {
     path: "/about-us",
-    element: <About/>
+    element: <About />,
   },
   {
     path: "/destinations",
-    element: <DestinationPage/>
+    element: <DestinationPage />,
   },
   {
-    path: "/trips",
-    element: <Trips/>
+    path: "/trips/:destination", 
+    element: <Trips />,
   },
   {
     path: "/blogs",
-    element: <Blogs/>
+    element: <Blogs />,
   },
   {
     path: "/contact-us",
-    element: <Contacts/>
-  }
+    element: <Contacts />,
+  },
 ]);
 
 const root = document.getElementById("root");
 
 ReactDOM.createRoot(root).render(
-  <RouterProvider router={router} />
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>
 );
 
-  return (
-      <RouterProvider/>
-  )
+function App() {
+  return null;
 }
 
-export default App
+export default App;

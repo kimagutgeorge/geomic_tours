@@ -9,7 +9,7 @@ const DestinationPage = () => {
   return (
     <>
       <Navbar />
-      <HomeBanner page_name="Destinations" />
+      <HomeBanner page_name="Destinations" destination_name="" />
       <DestinationList />
       <DestinationCarousel />
       <BackToTop />
