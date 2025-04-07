@@ -9,7 +9,7 @@ const Blogs = () => {
   return (
     <>
       <Navbar />
-      <HomeBanner page_name="Blogs" />
+      <HomeBanner page_name="Blogs" page_title="Blogs" />
       <BlogsContent />
       <Footer />
       <BackToTop />

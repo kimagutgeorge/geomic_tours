@@ -11,6 +11,7 @@ import DestinationPage from "./views/Destinations";
 import Trips from "./views/Trips";
 import Blogs from "./views/Blogs";
 import Contacts from "./views/Contact";
+import SingleDestination from "./views/SingleDestination";
 
 const router = createBrowserRouter([
   {
@@ -27,8 +28,12 @@ const router = createBrowserRouter([
     element: <DestinationPage />,
   },
   {
-    path: "/trips/:destination", 
-    element: <Trips />,
+    path: "/trips",
+    element: <Trips/>
+  },
+  {
+    path: "/destinations/:destination", 
+    element: <SingleDestination />,
   },
   {
     path: "/blogs",

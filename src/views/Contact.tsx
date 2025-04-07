@@ -9,7 +9,7 @@ const Contacts = () => {
   return (
     <>
       <Navbar />
-      <HomeBanner page_name="Contact us" />
+      <HomeBanner page_name="Contact us" page_title="Contact us" />
       <ContactsContent />
       <Footer />
       <BackToTop />

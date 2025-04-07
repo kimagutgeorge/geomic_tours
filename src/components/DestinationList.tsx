@@ -35,21 +35,24 @@ const DestinationList = () => {
         <div className="destination-inner tours mt-10-vh col-100 d-flex flex-wrap">
           {destinations.map((destination) => (
             <div className="card-wrapper col-3 vh-60" key={destination.id}>
-              <div className="card h-100 position-relative">
-                <div className="destination-card-text f-14 text-white position-absolute">
-                  ({destination.no_of_trips} Trips)
+              <Link
+                to={`/destinations/${destination.name}`}
+                className="dft-color"
+              >
+                <div className="card h-100 position-relative">
+                  <div className="destination-card-text f-14 text-white position-absolute">
+                    ({destination.no_of_trips} Trips)
+                  </div>
+                  <img
+                    className="card-img-top h-80"
+                    src={destination.image}
+                    alt="Card image cap"
+                  />
                 </div>
-                <img
-                  className="card-img-top h-80"
-                  src={destination.image}
-                  alt="Card image cap"
-                />
-              </div>
-              <div className="card-body mt-2">
-                <Link to={`/trips/${destination.name}`} className="dft-color">
+                <div className="card-body mt-2">
                   {destination.name} <i className="fa-solid fa-arrow-right"></i>
-                </Link>
-              </div>
+                </div>
+              </Link>
             </div>
           ))}
         </div>

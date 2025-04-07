@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 import BackToTop from "../components/BackToTop";
 import { useParams } from "react-router-dom";
 
-const Trips = () => {
+const SingleDestination = () => {
   const { destination } = useParams();
   return (
     <>
@@ -14,7 +14,7 @@ const Trips = () => {
       <HomeBanner
         page_name="Trips"
         destination_name={destination}
-        page_title="Trips"
+        page_title="Destinations"
       />
       <TripsContent />
       <Footer />
@@ -23,4 +23,4 @@ const Trips = () => {
   );
 };
 
-export default Trips;
+export default SingleDestination;
