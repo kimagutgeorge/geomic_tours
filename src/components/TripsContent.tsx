@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router";
 
 const TripsContent = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -13,6 +14,36 @@ const TripsContent = () => {
 
   // Calculate the position percentage for the value bubble
   const positionPercentage = ((value - 1) / 6) * 100;
+
+  //trips
+  const trips = [
+    {
+      id: 1,
+      name: "3 Days Mombasa",
+      destination: "Mombasa",
+      category: "Honey Moon",
+      image: "destinations/baringo.jpg",
+      days: "3",
+      description:
+        "The Tiananmen, a gate in the wall of the Imperial City, was built in 1415 during the Ming",
+      price: "500",
+      prev_price: "530",
+      discount: "12",
+    },
+    {
+      id: 1,
+      name: "At the hilltop",
+      destination: "Mt. Kenya",
+      category: "Honey Moon",
+      image: "destinations/mt-kenya.jpg",
+      days: "2",
+      description:
+        "The Tiananmen, a gate in the wall of the Imperial City, was built in 1415 during the Ming",
+      price: "500",
+      prev_price: "530",
+      discount: "12",
+    },
+  ];
   return (
     <>
       <div className="destinations trips categories row mt-10-vh position-relative">
@@ -207,206 +238,85 @@ const TripsContent = () => {
               </div>
             </div>
             <div className="fiter-page-body d-flex flex-wrap mt-4">
-              <div className="card-wrapper col-6">
-                <div className="card tour-card">
-                  <img
-                    className="card-img-top"
-                    src="destinations/baringo.jpg"
-                    alt="Card image cap"
-                  />
-                  <div className="card-body">
-                    <h5 className="card-title dft-color-2">3 days Mombasa</h5>
-                    <div className="w-100 d-flex row card-body-fixed">
-                      <div className="col-7">
-                        <p className="f-14">
-                          <i className="fa-solid fa-location-dot"></i>
-                          <span className="custom-light-color">Mombasa</span>
-                        </p>
-                        <p className="f-14">
-                          <i className="fa-solid fa-clock"></i>
-                          <span className="custom-light-color">3 Days</span>
-                        </p>
-                        <p className="f-14">
-                          <i className="fa-solid fa-boxes"></i>
-                          <span className="custom-light-color">Category</span>
-                        </p>
-                        <div className="w-100 description">
-                          <p className="custom-light-color">
-                            The Tiananmen, a gate in the wall of the Imperial
-                            City, was built in 1415 during the Ming
+              {trips.map((trip, index) => (
+                <div className="card-wrapper col-6">
+                  <div className="card tour-card">
+                    <img
+                      className="card-img-top"
+                      src="destinations/baringo.jpg"
+                      alt="Card image cap"
+                    />
+                    <div className="card-body">
+                      <Link to={`/trip/${trip.name}`}>
+                        <h5 className="card-title dft-color-2">{trip.name}</h5>
+                      </Link>
+                      <div className="w-100 d-flex row card-body-fixed">
+                        <div className="col-7">
+                          <p className="f-14">
+                            <i className="fa-solid fa-location-dot"></i>
+                            <span className="custom-light-color">
+                              {trip.description}
+                            </span>
+                          </p>
+                          <p className="f-14">
+                            <i className="fa-solid fa-clock"></i>
+                            <span className="custom-light-color">
+                              {trip.days} Days
+                            </span>
+                          </p>
+                          <p className="f-14">
+                            <i className="fa-solid fa-boxes"></i>
+                            <span className="custom-light-color">
+                              {trip.category}
+                            </span>
+                          </p>
+                          <div className="w-100 description">
+                            <p className="custom-light-color">
+                              {trip.description}
+                            </p>
+                          </div>
+                        </div>
+                        <div className="col-5 tour-card-price">
+                          <div className="destination-card-text text-white">
+                            {trip.discount}% off
+                          </div>
+                          <p className="mt-2">
+                            <span className="section-title">${trip.price}</span>
+                            <span className="f-14 ms-2 custom-light-color text-decoration-line-through">
+                              ${trip.prev_price}
+                            </span>
                           </p>
                         </div>
                       </div>
-                      <div className="col-5">
-                        <div className="destination-card-text text-white">
-                          12% off
-                        </div>
-                        <p className="mt-2">
-                          <span className="section-title">$500</span>
-                          <span className="f-14 ms-2 custom-light-color text-decoration-line-through">
-                            $530
-                          </span>
-                        </p>
+                      <div className="w-100 card-btn d-flex justify-content-center mt-4">
+                        <button className="btn-default-light w-100 mt-2">
+                          <Link to={`/trip/${trip.name}`}>
+                            <span className="text-white">View Details</span>
+                          </Link>
+                        </button>
                       </div>
-                    </div>
-                    <div className="w-100 card-btn d-flex justify-content-center mt-4">
-                      <button className="btn-default-light w-100 mt-2">
-                        <span className="text-white">View Details</span>
-                      </button>
-                    </div>
-                    <div className="w-100 mt-2">
-                      <p
-                        className="custom-light-color f-8"
-                        style={{ marginBottom: "0px" }}
-                      >
-                        Available
-                      </p>
-                      <div className="w-100 calendar-days d-flex flex-no-wrap">
-                        <span>
-                          {" "}
-                          <i className="fa-solid fa-calendar f-14 my-icon"></i>{" "}
-                        </span>
-                        <span className="ms-2 f-12 dft-color-2">Jan</span>
-                        <span className="ms-2 f-12 dft-color-2">Feb</span>
+                      <div className="w-100 mt-2">
+                        <p
+                          className="custom-light-color f-8"
+                          style={{ marginBottom: "0px" }}
+                        >
+                          Available
+                        </p>
+                        <div className="w-100 calendar-days d-flex flex-no-wrap">
+                          <span>
+                            {" "}
+                            <i className="fa-solid fa-calendar f-14 my-icon"></i>{" "}
+                          </span>
+                          <span className="ms-2 f-12 dft-color-2">Jan</span>
+                          <span className="ms-2 f-12 dft-color-2">Feb</span>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              ))}
+
               {/* end of card */}
-              <div className="card-wrapper col-6">
-                <div className="card tour-card">
-                  <img
-                    className="card-img-top"
-                    src="destinations/baringo.jpg"
-                    alt="Card image cap"
-                  />
-                  <div className="card-body">
-                    <h5 className="card-title dft-color-2">3 days Mombasa</h5>
-                    <div className="w-100 d-flex row card-body-fixed">
-                      <div className="col-7">
-                        <p className="f-14">
-                          <i className="fa-solid fa-location-dot"></i>
-                          <span className="custom-light-color">Mombasa</span>
-                        </p>
-                        <p className="f-14">
-                          <i className="fa-solid fa-clock"></i>
-                          <span className="custom-light-color">3 Days</span>
-                        </p>
-                        <p className="f-14">
-                          <i className="fa-solid fa-boxes"></i>
-                          <span className="custom-light-color">Category</span>
-                        </p>
-                        <div className="w-100 description">
-                          <p className="custom-light-color">
-                            The Tiananmen, a gate in the wall of the Imperial
-                            City, was built in 1415 during the Ming
-                          </p>
-                        </div>
-                      </div>
-                      <div className="col-5">
-                        <div className="destination-card-text text-white">
-                          12% off
-                        </div>
-                        <p className="mt-2">
-                          <span className="section-title">$500</span>
-                          <span className="f-14 ms-2 custom-light-color text-decoration-line-through">
-                            $530
-                          </span>
-                        </p>
-                      </div>
-                    </div>
-                    <div className="w-100 card-btn d-flex justify-content-center mt-4">
-                      <button className="btn-default-light w-100 mt-2">
-                        <span className="text-white">View Details</span>
-                      </button>
-                    </div>
-                    <div className="w-100 mt-2">
-                      <p
-                        className="custom-light-color f-8"
-                        style={{ marginBottom: "0px" }}
-                      >
-                        Available
-                      </p>
-                      <div className="w-100 calendar-days d-flex flex-no-wrap">
-                        <span>
-                          {" "}
-                          <i className="fa-solid fa-calendar f-14 my-icon"></i>{" "}
-                        </span>
-                        <span className="ms-2 f-12 dft-color-2">Jan</span>
-                        <span className="ms-2 f-12 dft-color-2">Feb</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* end of card */}
-              <div className="card-wrapper col-6">
-                <div className="card tour-card">
-                  <img
-                    className="card-img-top"
-                    src="destinations/baringo.jpg"
-                    alt="Card image cap"
-                  />
-                  <div className="card-body">
-                    <h5 className="card-title dft-color-2">3 days Mombasa</h5>
-                    <div className="w-100 d-flex row card-body-fixed">
-                      <div className="col-7">
-                        <p className="f-14">
-                          <i className="fa-solid fa-location-dot"></i>
-                          <span className="custom-light-color">Mombasa</span>
-                        </p>
-                        <p className="f-14">
-                          <i className="fa-solid fa-clock"></i>
-                          <span className="custom-light-color">3 Days</span>
-                        </p>
-                        <p className="f-14">
-                          <i className="fa-solid fa-boxes"></i>
-                          <span className="custom-light-color">Category</span>
-                        </p>
-                        <div className="w-100 description">
-                          <p className="custom-light-color">
-                            The Tiananmen, a gate in the wall of the Imperial
-                            City, was built in 1415 during the Ming
-                          </p>
-                        </div>
-                      </div>
-                      <div className="col-5">
-                        <div className="destination-card-text text-white">
-                          12% off
-                        </div>
-                        <p className="mt-2">
-                          <span className="section-title">$500</span>
-                          <span className="f-14 ms-2 custom-light-color text-decoration-line-through">
-                            $530
-                          </span>
-                        </p>
-                      </div>
-                    </div>
-                    <div className="w-100 card-btn d-flex justify-content-center mt-4">
-                      <button className="btn-default-light w-100 mt-2">
-                        <span className="text-white">View Details</span>
-                      </button>
-                    </div>
-                    <div className="w-100 mt-2">
-                      <p
-                        className="custom-light-color f-8"
-                        style={{ marginBottom: "0px" }}
-                      >
-                        Available
-                      </p>
-                      <div className="w-100 calendar-days d-flex flex-no-wrap">
-                        <span>
-                          {" "}
-                          <i className="fa-solid fa-calendar f-14 my-icon"></i>{" "}
-                        </span>
-                        <span className="ms-2 f-12 dft-color-2">Jan</span>
-                        <span className="ms-2 f-12 dft-color-2">Feb</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>

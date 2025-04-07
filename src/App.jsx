@@ -1,9 +1,7 @@
 import {
   createBrowserRouter,
   RouterProvider,
-} from "react-router-dom"; // ✅ Only use this
-import React from "react";
-import ReactDOM from "react-dom/client";
+} from "react-router-dom";
 import Home from "./views/Home";
 import About from "./views/About";
 import NotFound from "./views/NotFound";
@@ -12,49 +10,55 @@ import Trips from "./views/Trips";
 import Blogs from "./views/Blogs";
 import Contacts from "./views/Contact";
 import SingleDestination from "./views/SingleDestination";
+import SingleTrip from "./views/SingleTrip";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
-    errorElement: <NotFound />,
+    errorElement: <NotFound />
   },
   {
     path: "/about-us",
     element: <About />,
+    errorElement: <NotFound />
   },
   {
     path: "/destinations",
     element: <DestinationPage />,
+    errorElement: <NotFound />
   },
   {
     path: "/trips",
-    element: <Trips/>
+    element: <Trips/>,
+    errorElement: <NotFound />
   },
   {
-    path: "/destinations/:destination", 
+    path: "/destination/:destination", 
     element: <SingleDestination />,
+    errorElement: <NotFound />
   },
   {
     path: "/blogs",
     element: <Blogs />,
+    errorElement: <NotFound />
   },
   {
     path: "/contact-us",
     element: <Contacts />,
+    errorElement: <NotFound />
   },
+  {
+    path: "/trip/:trip",
+    element: <SingleTrip/>,
+    errorElement: <NotFound />
+  }
 ]);
 
-const root = document.getElementById("root");
-
-ReactDOM.createRoot(root).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
-);
-
 function App() {
-  return null;
+  return (
+    <RouterProvider router={router} />
+  );
 }
 
 export default App;

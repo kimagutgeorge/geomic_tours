@@ -38,7 +38,7 @@ const HomeBanner = ({
       </div>
       <div className="w-100 h-100 banner-img-container">
         <img
-          src="slider/safari.jpg"
+          src="/slider/safari.jpg"
           alt="Banner"
           className="w-100 h-100 object-fit-cover"
         />{" "}

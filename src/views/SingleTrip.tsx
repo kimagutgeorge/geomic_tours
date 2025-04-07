@@ -1,26 +1,26 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import HomeBanner from "../components/HomeBanner";
+import SingleTripContent from "../components/SingleTripContent";
 import Footer from "../components/Footer";
 import BackToTop from "../components/BackToTop";
-import SingleDestinationContent from "../components/SingleDestinationContent";
 import { useParams } from "react-router-dom";
 
-const SingleDestination = () => {
-  const { destination } = useParams();
+const SingleTrip = () => {
+  const { trip } = useParams();
   return (
     <>
       <Navbar />
       <HomeBanner
-        page_name="Destinations"
-        destination_name={destination}
-        page_title="Destinations"
+        page_name="Trips"
+        destination_name={trip}
+        page_title="Trips"
       />
-      <SingleDestinationContent />
+      <SingleTripContent />
       <Footer />
       <BackToTop />
     </>
   );
 };
 
-export default SingleDestination;
+export default SingleTrip;

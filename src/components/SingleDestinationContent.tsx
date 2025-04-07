@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-const TripsContent = () => {
+const SingleDestinationContent = () => {
   const [isOpen, setIsOpen] = useState(true);
   const [typeOpen, settypeisOpen] = useState(true);
   const [showSort, setshowSort] = useState(false);
@@ -211,7 +211,7 @@ const TripsContent = () => {
                 <div className="card tour-card">
                   <img
                     className="card-img-top"
-                    src="destinations/baringo.jpg"
+                    src="/destinations/baringo.jpg"
                     alt="Card image cap"
                   />
                   <div className="card-body">
@@ -278,7 +278,7 @@ const TripsContent = () => {
                 <div className="card tour-card">
                   <img
                     className="card-img-top"
-                    src="destinations/baringo.jpg"
+                    src="/destinations/baringo.jpg"
                     alt="Card image cap"
                   />
                   <div className="card-body">
@@ -345,7 +345,7 @@ const TripsContent = () => {
                 <div className="card tour-card">
                   <img
                     className="card-img-top"
-                    src="destinations/baringo.jpg"
+                    src="/destinations/baringo.jpg"
                     alt="Card image cap"
                   />
                   <div className="card-body">
@@ -414,4 +414,4 @@ const TripsContent = () => {
     </>
   );
 };
-export default TripsContent;
+export default SingleDestinationContent;

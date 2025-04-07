@@ -1254,6 +1254,9 @@ form .form-group{
 form .contact-card .col-12 textarea{
     height: 150px;
 }
+.tour-card-price{
+    border-left: 1px solid rgb(220, 220, 220);
+}
 
 
 

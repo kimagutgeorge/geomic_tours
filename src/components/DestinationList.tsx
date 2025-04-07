@@ -36,7 +36,7 @@ const DestinationList = () => {
           {destinations.map((destination) => (
             <div className="card-wrapper col-3 vh-60" key={destination.id}>
               <Link
-                to={`/destinations/${destination.name}`}
+                to={`/destination/${destination.name}`}
                 className="dft-color"
               >
                 <div className="card h-100 position-relative">
