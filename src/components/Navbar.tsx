@@ -34,7 +34,7 @@ const Navbar = () => {
       </div>
       <div className="row col-12 d-flex flex-nowrap position-relative">
         <div className="col-3">
-          <img src="geomic-logo.png" className="img-logo ms-4" alt="" />
+          <img src="/geomic-logo.png" className="img-logo ms-4" alt="" />
         </div>
         <div className="col-6 d-flex">
           <Link to="/" className="w-fit nav-a dft-color mt-4 m2-3">
@@ -45,14 +45,9 @@ const Navbar = () => {
             Destinations
           </Link>
           <Link to="/trips" className="w-fit nav-a dft-color mt-4 ms-3">
-            Safaris
+            Trips & Safaris
           </Link>
-          <Link to="#" className="w-fit nav-a dft-color mt-4 ms-3">
-            Themed
-          </Link>
-          <Link to="#" className="w-fit nav-a dft-color mt-4 ms-3">
-            Corperates
-          </Link>
+
           <Link to="/blogs" className="w-fit nav-a dft-color mt-4 ms-3">
             Blog
           </Link>

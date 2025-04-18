@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import HomeBanner from "../components/HomeBanner";
-import TripsContent from "../components/TripsContent";
+import TripsContent from "../components/content/TripsContent";
 import Footer from "../components/Footer";
 import BackToTop from "../components/BackToTop";
 import { useParams } from "react-router-dom";

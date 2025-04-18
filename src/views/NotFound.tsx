@@ -26,7 +26,7 @@ const NotFound = () => {
         </div>
         <div className="col-6 h-100 d-flex justify-content-center">
           <div className="error-inner h-100 d-flex flex-column justify-content-center">
-            <img src="icons/error.svg" className="error-img" alt="" />
+            <img src="/icons/error.svg" className="error-img" alt="" />
           </div>
         </div>
       </div>

@@ -27,7 +27,7 @@ const Footer = () => {
       <div className="col-12 footer-bottom">
         <div className="categories col-12 row">
           <div className="col-4">
-            <img src="geomic-logo-dark.png" className="img-logo ms-4" alt="" />
+            <img src="/geomic-logo-dark.png" className="img-logo ms-4" alt="" />
             <p className="text-white">
               Rapidiously myocardinate cross-platform intellectual capital
               model. Appropriately create interactive infrastructures

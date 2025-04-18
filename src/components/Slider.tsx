@@ -16,7 +16,7 @@ const Slider = () => {
           <div className="carousel-item-inner">
             <img
               className="d-block w-100"
-              src="slider/slider.jpg"
+              src="/slider/slider.jpg"
               alt="First slide"
             />
           </div>
@@ -42,11 +42,10 @@ const Slider = () => {
         {/* end of slider */}
         <Carousel.Item className="p-relative h-100">
           <div className="carousel-item-inner">
-            <img
-              className="d-block w-100"
-              src="slider/slider2.jpg"
-              alt="First slide"
-            />
+            <video className="d-block w-100" controls autoPlay loop muted>
+              <source src="/slider/slider2.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
 
           <Carousel.Caption className="carousel-caption d-flex flex-column justify-content-center col-6 with-anime">

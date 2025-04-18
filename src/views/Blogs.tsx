@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import HomeBanner from "../components/HomeBanner";
-import BlogsContent from "../components/BlogsContent";
+import BlogsContent from "../components/content/BlogsContent";
 import Footer from "../components/Footer";
 import BackToTop from "../components/BackToTop";
 
