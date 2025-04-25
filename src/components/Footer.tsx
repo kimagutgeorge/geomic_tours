@@ -57,7 +57,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="col-2">
-            <p className="section-title">Quick Links</p>
+            <p className="section-title text-white">Quick Links</p>
             <li>
               <Link to="/" className="text-white">
                 <i className="fa-solid fa-angle-right text-white"></i> Home
@@ -80,10 +80,20 @@ const Footer = () => {
             </li>
           </div>
           <div className="col-3 touch">
-            <p className="section-title">Get In Touch</p>
+            <p className="section-title text-white">Get In Touch</p>
             <div className="d-flex flex-no-wrap">
-              <div className="touch-icon">
-                <i className="fa-solid fa-phone"></i>
+              <div
+                className="touch-icon d-flex justify-content-center rounded-circle"
+                style={{
+                  width: "40px",
+                  height: "40px",
+                  backgroundColor: "#0a637a",
+                  transition: "0.3s ease-in-out",
+                }}
+              >
+                <div className="h-100 d-flex flex-column justify-content-center">
+                  <i className="fa-solid fa-phone text-white"></i>
+                </div>
               </div>
               <div className="touch-content d-block">
                 <p className="text-white f-15">
@@ -99,8 +109,18 @@ const Footer = () => {
               </div>
             </div>
             <div className="d-flex flex-no-wrap">
-              <div className="touch-icon">
-                <i className="fa-solid fa-envelope"></i>
+              <div
+                className="touch-icon d-flex justify-content-center rounded-circle"
+                style={{
+                  width: "40px",
+                  height: "40px",
+                  backgroundColor: "#0a637a",
+                  transition: "0.3s ease-in-out",
+                }}
+              >
+                <div className="h-100 d-flex flex-column justify-content-center">
+                  <i className="fa-solid fa-envelope text-white"></i>
+                </div>
               </div>
               <div className="touch-content d-block">
                 <p className="text-white f-15">
@@ -116,8 +136,18 @@ const Footer = () => {
               </div>
             </div>
             <div className="d-flex flex-no-wrap">
-              <div className="touch-icon">
-                <i className="fa-solid fa-location-dot"></i>
+              <div
+                className="touch-icon d-flex justify-content-center rounded-circle"
+                style={{
+                  width: "40px",
+                  height: "40px",
+                  backgroundColor: "#0a637a",
+                  transition: "0.3s ease-in-out",
+                }}
+              >
+                <div className="h-100 d-flex flex-column justify-content-center">
+                  <i className="fa-solid fa-location-dot text-white"></i>
+                </div>
               </div>
               <div className="touch-content d-block">
                 <p className="text-white f-15">Tom Mboya Street, Mombasa</p>
@@ -125,7 +155,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="col-3">
-            <p className="section-title">Latest Blogs</p>
+            <p className="section-title text-white">Latest Blogs</p>
             <li>
               <Link to="#" className="text-white">
                 <i className="fa-solid fa-angle-right text-white"></i> Wild
@@ -147,7 +177,12 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="footer-banner w-100">
+      <div
+        className="footer-banner w-100"
+        style={{
+          borderTop: "1px solid rgb(136, 136, 136)",
+        }}
+      >
         <p className="text-white f-14">
           Copyright &copy; 2025 Geomic Tours. All Rights Reserved
         </p>

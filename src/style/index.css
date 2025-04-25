@@ -834,7 +834,6 @@ input[type=range]{
     background-color: #113d48;
 }
 .footer-bottom .categories{
-    border-bottom: 1px solid rgb(180, 180, 180);
     padding: 50px 0px;
 }
 .footer-bottom .img-logo{
@@ -885,16 +884,9 @@ input[type=range]{
         opacity: 1;  
     }
 }
-.footer-bottom .touch .fa-solid{
-    font-size: 18px;
-    color: #ffffff;
-    padding: 10px;
-    background-color: #0a637a;
-    transition: 0.2s ease-in-out;
-    border-radius: 50%;
-}
-.footer-bottom .touch .fa-solid:hover{
-    background-color: #f58826;
+
+.footer-bottom .touch-icon:hover{
+    background-color: #f58826 !important;
 }
 .bg-light{
     background-color: #f58826 !important;
