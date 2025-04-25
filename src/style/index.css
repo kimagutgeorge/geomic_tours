@@ -1277,7 +1277,7 @@ button.btn.bg-primary:hover{
     background-color: #f58826;
 }
 form.form-contact{
-    width: 60%;
+    width: 100%;
 }
 form .contact-card{
     padding: 20px;

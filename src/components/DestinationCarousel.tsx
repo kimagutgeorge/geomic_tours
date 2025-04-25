@@ -59,7 +59,7 @@ const DestinationCarousel = () => {
               <div className="card">
                 <img
                   className="card-img-top"
-                  src="slider/slider3.jpg"
+                  src="/slider/slider3.jpg"
                   alt="Card image cap"
                 />
                 <div className="card-body">

@@ -100,7 +100,7 @@ const Categories = () => {
                 <div className="card-top position-relative">
                   <img
                     className="card-img-top h-100"
-                    src="slider/slider.jpg"
+                    src="/slider/slider.jpg"
                     alt="Safari"
                   />
                   <div className="card-top-cover position-absolute w-100 bg-black opacity-50"></div>
@@ -118,7 +118,7 @@ const Categories = () => {
                 <div className="card-top position-relative">
                   <img
                     className="card-img-top h-100"
-                    src="slider/slider.jpg"
+                    src="/slider/slider.jpg"
                     alt="Diving"
                   />
                   <div className="card-top-cover position-absolute w-100 bg-black opacity-50"></div>
@@ -135,7 +135,7 @@ const Categories = () => {
                 <div className="card-top position-relative">
                   <img
                     className="card-img-top h-100"
-                    src="slider/slider.jpg"
+                    src="/slider/slider.jpg"
                     alt="Diving"
                   />
                   <div className="card-top-cover position-absolute w-100 bg-black opacity-50"></div>
@@ -152,7 +152,7 @@ const Categories = () => {
                 <div className="card-top position-relative">
                   <img
                     className="card-img-top h-100"
-                    src="slider/slider.jpg"
+                    src="/slider/slider.jpg"
                     alt="Diving"
                   />
                   <div className="card-top-cover position-absolute w-100 bg-black opacity-50"></div>

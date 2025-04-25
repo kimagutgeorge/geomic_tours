@@ -6,19 +6,19 @@ const DestinationList = () => {
       id: 1,
       name: "Mombasa",
       no_of_trips: "2",
-      image: "destinations/mombasa.jpg",
+      image: "/destinations/mombasa.jpg",
     },
     {
       id: 2,
       name: "Baringo",
       no_of_trips: "20",
-      image: "destinations/baringo.jpg",
+      image: "/destinations/baringo.jpg",
     },
     {
       id: 3,
       name: "Maasai Mara",
       no_of_trips: "3",
-      image: "destinations/maasai.jpg",
+      image: "/destinations/maasai.jpg",
     },
   ];
   return (

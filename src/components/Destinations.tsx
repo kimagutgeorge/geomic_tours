@@ -55,7 +55,7 @@ const Destinations = () => {
         <div className="card col-4 card-1 position-absolute overflow-hidden">
           <div className="card-inner position-relative w-100 h-100">
             <div className="card-inner-image position-absolute h-100">
-              <img src="destinations/maasai.jpg" className="h-100" />
+              <img src="/destinations/maasai.jpg" className="h-100" />
             </div>
             <div className="card-inner-dark-layout bg-black position-absolute w-100 h-100"></div>
             <div className="card-inner-text position-absolute d-flex h-100 w-100 flex-column justify-content-end">
@@ -72,7 +72,7 @@ const Destinations = () => {
         <div className="card col-4 card-2 position-absolute  overflow-hidden">
           <div className="card-inner position-relative w-100 h-100">
             <div className="card-inner-image position-absolute h-100">
-              <img src="destinations/baringo.jpg" className="h-100" />
+              <img src="/destinations/baringo.jpg" className="h-100" />
             </div>
             <div className="card-inner-dark-layout bg-black position-absolute w-100 h-100"></div>
             <div className="card-inner-text position-absolute d-flex h-100 w-100 flex-column justify-content-end">
@@ -89,7 +89,7 @@ const Destinations = () => {
         <div className="card col-4 active position-absolute  overflow-hidden">
           <div className="card-inner position-relative w-100 h-100">
             <div className="card-inner-image position-absolute h-100">
-              <img src="destinations/mombasa.jpg" className="h-100" />
+              <img src="/destinations/mombasa.jpg" className="h-100" />
             </div>
             <div className="card-inner-dark-layout bg-black position-absolute w-100 h-100"></div>
             <div className="card-inner-text position-absolute d-flex h-100 w-100 flex-column justify-content-end">
@@ -106,7 +106,7 @@ const Destinations = () => {
         <div className="card col-4 card-2-right card-right position-absolute  overflow-hidden">
           <div className="card-inner position-relative w-100 h-100">
             <div className="card-inner-image position-absolute h-100">
-              <img src="destinations/mt-kenya.jpg" className="h-100" />
+              <img src="/destinations/mt-kenya.jpg" className="h-100" />
             </div>
             <div className="card-inner-dark-layout bg-black position-absolute w-100 h-100"></div>
             <div className="card-inner-text position-absolute d-flex h-100 w-100 flex-column justify-content-end">
@@ -123,7 +123,7 @@ const Destinations = () => {
         <div className="card col-4 card-1-right card-right position-absolute overflow-hidden">
           <div className="card-inner position-relative w-100 h-100">
             <div className="card-inner-image position-absolute h-100">
-              <img src="destinations/taita.jpg" className="h-100" />
+              <img src="/destinations/taita.jpg" className="h-100" />
             </div>
             <div className="card-inner-dark-layout bg-black position-absolute w-100 h-100"></div>
             <div className="card-inner-text position-absolute d-flex h-100 w-100 flex-column justify-content-end">
