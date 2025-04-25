@@ -1,7 +1,104 @@
-import React from "react";
+import React, { useState } from "react";
+import "leaflet/dist/leaflet.css";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 // import
 
 const SingleTripContent = () => {
+  const view_buttons = [
+    { id: "Overview", label: "Overview" },
+    { id: "Itinerary", label: "Itinerary" },
+    { id: "Cost", label: "Cost" },
+    { id: "FAQs", label: "FAQs" },
+    { id: "Map", label: "Map" },
+  ];
+  // includes
+  const cost_includes = [
+    {
+      id: 1,
+      content:
+        "Pick-up or Drop-off service from and to Airport(in our own vehicle)",
+    },
+    {
+      id: 2,
+      content: "Transportation to and from!!",
+    },
+    {
+      id: 3,
+      content:
+        "Food all along the trip(Breakfast, Lunch, Dinner and a cup of coffee or tea) and accommodations during the trip in hotels with family environment",
+    },
+    {
+      id: 4,
+      content:
+        "Transportation, food, accommodation and insurance of Guide during the trip",
+    },
+    {
+      id: 4,
+      content:
+        "Down jacket, all-season sleeping bag, duffel bag and trekking map(in case if you don’t have your own. Down jacket, sleeping bag and duffel bag must be returned after completion of the trip)",
+    },
+    {
+      id: 5,
+      content: "ll the required permits and paperwork",
+    },
+  ];
+  // excudes
+  const cost_excludes = [
+    {
+      id: 1,
+      content: "International Airfare",
+    },
+    {
+      id: 1,
+      content: "Visa Charges",
+    },
+    {
+      id: 1,
+      content:
+        "Hotel Expenses(In Kathmandu, some packages do include hotel expenses)",
+    },
+    {
+      id: 1,
+      content: "Your travel and medical insurance",
+    },
+  ];
+  // faqs
+  const faqs = [
+    {
+      id: 1,
+      heading: "headingOne",
+      idCollapse: "#collapseOne",
+      collapse: "collapseOne",
+      headingText: "How fit do I need to be to do this trek?",
+      content:
+        "Annapurna Base Camp is a Grade B or a moderately difficult trekking route. So any fit person can do this trek, even if you do not have any previous experience. You should be aware of what to expect and mentally prepare for it. Then, as long as you will too, you can.",
+    },
+    {
+      id: 2,
+      heading: "headingTwo",
+      idCollapse: "#collapseTwo",
+      collapse: "collapseTwo",
+      headingText:
+        "How long do we walk every day when doing Annapurna Base Camp trekking?",
+      content:
+        "Annapurna Base Camp is a Grade B or a moderately difficult trekking route. So any fit person can do this trek, even if you do not have any previous experience. You should be aware of what to expect and mentally prepare for it. Then, as long as you will too, you can.",
+    },
+  ];
+  //iterinary
+  const tour_itinerary = [
+    {
+      id: 1,
+      heading: "headingOne",
+      idCollapse: "#collapseOne",
+      collapse: "collapseOne",
+      headingText: "How fit do I need to be to do this trek?",
+      content:
+        "Annapurna Base Camp is a Grade B or a moderately difficult trekking route. So any fit person can do this trek, even if you do not have any previous experience. You should be aware of what to expect and mentally prepare for it. Then, as long as you will too, you can.",
+    },
+  ];
+  const [activeView, setActiveView] = useState("Overview");
+  const position = [-3.9768291, 39.7137181]; // [latitude, longitude]
+
   return (
     <>
       <div className="destinations services categories row mt-20-vh position-relative">
@@ -189,33 +286,19 @@ const SingleTripContent = () => {
               {/* tour details */}
               <div className="w-100 card rounded-0 mt-5-vh p-4">
                 <div className="w-100 mb-2 d-flex p-2">
-                  <div className="col-2">
-                    <p className="text-muted" style={{ cursor: "pointer" }}>
-                      Overview
-                    </p>
-                  </div>
-                  <div className="col-2">
-                    <p className="text-muted" style={{ cursor: "pointer" }}>
-                      Itinerary
-                    </p>
-                  </div>
-                  <div className="col-2">
-                    <p className="text-muted" style={{ cursor: "pointer" }}>
-                      Cost
-                    </p>
-                  </div>
-                  <div className="col-2">
-                    <p className="text-muted" style={{ cursor: "pointer" }}>
-                      FAQs
-                    </p>
-                  </div>
-                  <div className="col-2">
-                    <p className="text-muted" style={{ cursor: "pointer" }}>
-                      Map
-                    </p>
-                  </div>
+                  {view_buttons.map((button) => (
+                    <div className="col-2" key={button.id}>
+                      <p
+                        className="text-muted"
+                        style={{ cursor: "pointer" }}
+                        onClick={() => setActiveView(button.id)}
+                      >
+                        {button.label}
+                      </p>
+                    </div>
+                  ))}
                 </div>
-                <div className="w-100">
+                {activeView === "Overview" && (
                   <div className="w-100">
                     <p className="fs-3 section-title">Overview</p>
                     <p className="text-muted">
@@ -275,7 +358,286 @@ const SingleTripContent = () => {
                       </span>
                     </p>
                   </div>
-                </div>
+                )}
+                {/* Itinerary */}
+                {activeView === "Itinerary" && (
+                  <div className="w-100">
+                    {" "}
+                    <p className="fs-3 section-title">Itinerary</p>
+                    <div className="accordion border-0" id="accordionExample">
+                      <div className="accordion-item border-0">
+                        <h2
+                          className="accordion-header d-flex flex-no-wrap"
+                          id="headingOne"
+                        >
+                          <div
+                            className="icon d-flex justify-content-center bg-primary rounded-circle"
+                            style={{
+                              width: "50px",
+                              height: "50px",
+                              minWidth: "50px",
+                            }}
+                          >
+                            <div className="d-flex flex-column justify-content-center h-100">
+                              <i className="fa-solid fa-location-dot fs-5 text-white"></i>
+                            </div>
+                          </div>
+                          <button
+                            className="accordion-button ms-4 fs-5 fs-5 section-title"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne"
+                            aria-expanded="true"
+                            aria-controls="collapseOne"
+                          >
+                            Day 1 : Kathmandu to Pokhara (By flight or Bus), the
+                            city of Lakes, adventures and serenity.
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseOne"
+                          className="accordion-collapse collapse show"
+                          aria-labelledby="headingOne"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div className="accordion-body">
+                            Arrive at Tribhuwan International Airport,
+                            Kathmandu, you are welcomed by the team and then you
+                            will be transferred to your hotel. This trail goes
+                            through Ghorepani Poon Hill. Normally, the trek
+                            starts like Pokhara to Nayapul and ends like Phedi
+                            to Pokhara. While early travel tended to be slower,
+                            more dangerous, and more dominated by trade and
+                            migration, cultural and technological advances over
+                            many years have tended to mean that travel has
+                            become easier and more accessible. The evolution of
+                            technology in such diverse fields as horse tack and
+                            bullet trains has contributed to this trend.
+                          </div>
+                        </div>
+                      </div>
+                      {/* end of item */}
+                      <div className="accordion-item border-0">
+                        <h2
+                          className="accordion-header d-flex flex-no-wrap"
+                          id="headingTwo"
+                        >
+                          <div
+                            className="icon d-flex justify-content-center"
+                            style={{
+                              width: "50px",
+                              height: "50px",
+                              minWidth: "50px",
+                            }}
+                          ></div>
+                          <button
+                            className="accordion-button ms-4 fs-5 section-title"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo"
+                            aria-expanded="true"
+                            aria-controls="collapseTwo"
+                          >
+                            Day 2 : Drive to Nayapul and trek to Ulleri
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseTwo"
+                          className="accordion-collapse collapse"
+                          aria-labelledby="headingTwo"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div className="accordion-body">
+                            While early travel tended to be slower, more
+                            dangerous, and more dominated by trade and
+                            migration, cultural and technological advances over
+                            many years have tended to mean that travel has
+                            become easier and more accessible. The evolution of
+                            technology in such diverse fields as horse tack and
+                            bullet trains has contributed to this trend.
+                          </div>
+                        </div>
+                      </div>
+                      {/* end of item */}
+                      <div className="accordion-item border-0">
+                        <h2
+                          className="accordion-header d-flex flex-no-wrap"
+                          id="headingTwo"
+                        >
+                          <div
+                            className="icon d-flex justify-content-center"
+                            style={{
+                              width: "50px",
+                              height: "50px",
+                              minWidth: "50px",
+                            }}
+                          ></div>
+                          <button
+                            className="accordion-button ms-4 fs-5 section-title"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo"
+                            aria-expanded="true"
+                            aria-controls="collapseTwo"
+                          >
+                            Day 3 : Trek to Ghorepani
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseTwo"
+                          className="accordion-collapse collapse"
+                          aria-labelledby="headingTwo"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div className="accordion-body">
+                            The Palace of Fifty five Windows: This magnificent
+                            palace was built during the reign of King Yakshya
+                            Malla in A.D. 1427 and was subsequently remodeled by
+                            King Bhupatindra Malla in the seventeenth century.
+                            Among the brick walls with their gracious setting
+                            and sculptural design, is a balcony with Fifty five
+                            Windows, considered to be a unique masterpiece of
+                            woodcarving.
+                          </div>
+                        </div>
+                      </div>
+                      {/* end of item */}
+                      <div className="accordion-item border-0">
+                        <h2
+                          className="accordion-header d-flex flex-no-wrap"
+                          id="headingThree"
+                        >
+                          <div
+                            className="icon d-flex justify-content-center bg-primary rounded-circle"
+                            style={{
+                              width: "50px",
+                              height: "50px",
+                              minWidth: "50px",
+                            }}
+                          >
+                            <div className="d-flex flex-column justify-content-center h-100">
+                              <i className="fa-solid fa-location-dot fs-5 text-white"></i>
+                            </div>
+                          </div>
+                          <button
+                            className="accordion-button ms-4 fs-5 fs-5 section-title"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree"
+                            aria-expanded="true"
+                            aria-controls="collapseThree"
+                          >
+                            Day 4 : Early trek to Poon Hill, Back to Ghorepani
+                            and Trek to Tadapani
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseThree"
+                          className="accordion-collapse collapse"
+                          aria-labelledby="headingThree"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div className="accordion-body">
+                            The Palace of Fifty five Windows: This magnificent
+                            palace was built during the reign of King Yakshya
+                            Malla in A.D. 1427 and was subsequently remodeled by
+                            King Bhupatindra Malla in the seventeenth century.
+                            Among the brick walls with their gracious setting
+                            and sculptural design, is a balcony with Fifty five
+                            Windows, considered to be a unique masterpiece of
+                            woodcarving.The Palace of Fifty five Windows: This
+                            magnificent palace was built during the reign of
+                            King Yakshya Malla in A.D. 1427 and was subsequently
+                            remodeled by King Bhupatindra Malla in the
+                            seventeenth century. Among the brick walls with
+                            their gracious setting and sculptural design, is a
+                            balcony with Fifty five Windows, considered to be a
+                            unique masterpiece of woodcarving.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+                {/* price */}
+                {activeView === "Cost" && (
+                  <div className="w-100">
+                    {" "}
+                    <p className="fs-3 section-title">Cost</p>
+                    <p className="fs-5 section-title ">The Cost Includes</p>
+                    <div className="w-100 mt-4">
+                      {cost_includes.map((cost) => (
+                        <p key={cost.id}>
+                          <i className="fa-regular fa-circle-check my-icon"></i>{" "}
+                          <span className="text-muted">{cost.content}</span>
+                        </p>
+                      ))}
+                    </div>
+                    <p className="fs-5 section-title mt-4">The Cost Excludes</p>
+                    <div className="w-100 mt-4">
+                      {cost_excludes.map((cost) => (
+                        <p key={cost.id}>
+                          <i className="fa-solid fa-circle-xmark text-danger"></i>{" "}
+                          {cost.content}
+                        </p>
+                      ))}
+                    </div>
+                  </div>
+                )}
+                {/* FAQs */}
+                {activeView === "FAQs" && (
+                  <div className="w-100">
+                    {" "}
+                    <p className="fs-3 section-title">FAQs</p>
+                    <div className="accordion mt-4" id="accordionExample">
+                      {faqs.map((faq) => (
+                        <div className="accordion-item border-0">
+                          <h2
+                            className="accordion-header d-flex flex-no-wrap"
+                            id={faq.heading}
+                          >
+                            <button
+                              className="accordion-button ms-4 fs-5 fs-5 section-title"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target={faq.idCollapse}
+                              aria-expanded="true"
+                              aria-controls={faq.collapse}
+                            >
+                              {faq.headingText}
+                            </button>
+                          </h2>
+                          <div
+                            id={faq.collapse}
+                            className="accordion-collapse collapse show"
+                            aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample"
+                          >
+                            <div className="accordion-body">{faq.content}</div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+                {/* Map */}
+                {activeView === "Map" && (
+                  <div className="w-100" style={{ height: "700px" }}>
+                    <MapContainer
+                      className="w-100 h-100"
+                      center={position}
+                      zoom={13}
+                    >
+                      <TileLayer
+                        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                        url="https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}.png"
+                      />
+                      <Marker position={position}>
+                        <Popup>GeoMic Tours</Popup>
+                      </Marker>
+                    </MapContainer>
+                  </div>
+                )}
               </div>
               {/* book tour */}
               <div className="w-100 card rounded-0 mt-5-vh p-4">

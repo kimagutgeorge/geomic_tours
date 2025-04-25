@@ -27,6 +27,12 @@ select:focus{
     outline:1px solid #f58826 !important;
     border: 1px solid transparent !important;
 }
+.accordion-button{
+    background-color: transparent !important;
+}
+.accordion-button:focus{
+    box-shadow: none;
+}
 .text-primary{
     color: #113d48 !important;
 }
@@ -347,9 +353,9 @@ input[type=range]{
 .custom-btn.fa-solid{
     z-index: 11;
     font-size: 28px;
-    padding:10px 10px;
+    padding:30px 30px;
     background-color: #000;
-    border-radius: 5px;
+    border-radius: 50%;
 }
 .custom-btn.fa-solid:hover{
     background-color: #bb4618;
@@ -1317,6 +1323,62 @@ form .contact-card .col-12 textarea{
     justify-content: center;
     align-items: center;
   }
+
+
+
+
+
+
+
+
+
+
+
+/* Position both buttons on the right side */
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  left: 90%;
+  height: fit-content;
+  top: 50%;
+  right: 20px;
+  width: auto;
+  height: auto;
+  transform: translateY(-50%);
+  opacity: 1;
+}
+
+/* Specific styling for the previous button (up arrow) */
+.carousel-control-prev {
+  transform: translateY(-100%) rotate(90deg); /* Move up and rotate to face up */
+  
+}
+
+/* Specific styling for the next button (down arrow) */
+.carousel-control-next {
+  transform: translateY(0) rotate(90deg); /* Keep at center and rotate to face down */
+  margin-top: 40px; /* Add space between the two buttons */
+}
+
+/* Button styling */
+.custom-btn {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.custom-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+
 
 
 

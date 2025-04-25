@@ -4,7 +4,7 @@ const Slider = () => {
   return (
     <>
       <Carousel
-        className="carousel slide  custom-slider p-relative"
+        className="carousel slide  custom-slider position-relative"
         nextIcon={
           <i className="custom-btn fa-solid fa-arrow-right p-absolute text-white custom-carousel-icon"></i>
         }
