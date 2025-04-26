@@ -10,6 +10,7 @@ import Stats from "../components/Stats";
 import Testimonial from "../components/Testimonial";
 import Footer from "../components/Footer";
 import BackToTop from "../components/BackToTop";
+import BlogCarousel from "../components/BlogSlider";
 function Home() {
   return (
     <>
@@ -22,6 +23,7 @@ function Home() {
       <Gallery />
       <Stats />
       <Testimonial />
+      <BlogCarousel />
       <Footer />
       <BackToTop />
     </>

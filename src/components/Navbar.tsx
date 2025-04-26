@@ -60,8 +60,10 @@ const Navbar = () => {
         </div>
         <div className="col-3 d-flex flex-row-reverse">
           <button className="w-fit btn-default-dark text-white">
-            <span className="text-white">Request A Quote </span>
-            <span className="text-white"> &rarr;</span>
+            <Link to="/contact-us">
+              <span className="text-white">Request A Quote </span>
+              <span className="text-white"> &rarr;</span>
+            </Link>
           </button>
         </div>
       </div>

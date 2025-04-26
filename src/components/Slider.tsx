@@ -1,5 +1,6 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
+import { Link } from "react-router";
 const Slider = () => {
   return (
     <>
@@ -28,12 +29,16 @@ const Slider = () => {
             </p>
             <div className="d-flex flex-row mt-5 carousel-btns">
               <button className="w-fit btn-default-light text-white">
-                <span className="text-white">Explore Tours </span>
-                <span className="text-white"> &rarr;</span>
+                <Link to="/trips">
+                  <span className="text-white">Explore Tours </span>
+                  <span className="text-white"> &rarr;</span>
+                </Link>
               </button>
               <button className="w-fit btn-default-white ms-4">
-                <span className="text-white">Contact us </span>
-                <span className="text-white"> &rarr;</span>
+                <Link to="/contact-us" className="text-white">
+                  <span className="text-white">Contact us </span>
+                  <span className="text-white"> &rarr;</span>
+                </Link>
               </button>
             </div>
           </Carousel.Caption>
