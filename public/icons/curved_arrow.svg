@@ -40,7 +40,7 @@
      id="layer1"
      transform="translate(-10.868775,-11.178611)">
     <path
-      class="curved-arrow"
+      class="dark-stroke"
        style="fill:none;stroke:#ffffff;stroke-width:1;stroke-miterlimit:1.5;stroke-dasharray:none"
        id="path3"
        sodipodi:type="arc"
@@ -58,7 +58,7 @@
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <path
-    class="curved-arrow"
+    class="dark-stroke"
        style="fill:none;stroke:#ffffff;stroke-width:1;stroke-miterlimit:1.5;stroke-dasharray:none"
        id="path4"
        sodipodi:type="arc"
@@ -73,7 +73,7 @@
        d="m -18.612594,-33.054546 a 9.855319,9.855319 0 0 1 -7.304574,9.519507"
        transform="matrix(0,-1,-1,0,0,0)" />
     <rect
-    class="curved-arrow"
+    class="dark-stroke"
        style="fill:none;stroke:#ffffff;stroke-width:0.998531;stroke-miterlimit:1.5;stroke-dasharray:none"
        id="rect4"
        width="21.186396"

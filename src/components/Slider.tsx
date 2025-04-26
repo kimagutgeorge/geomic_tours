@@ -1,17 +1,16 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import { Link } from "react-router";
+import CurvedArrow from "./svg/CurvedArrorw";
+import LightButton from "./buttons/LightButton";
+import WhiteButton from "./buttons/WhiteButton";
 const Slider = () => {
   return (
     <>
       <Carousel
         className="carousel slide  custom-slider position-relative"
-        nextIcon={
-          <i className="custom-btn fa-solid fa-arrow-right p-absolute text-white custom-carousel-icon"></i>
-        }
-        prevIcon={
-          <i className="custom-btn fa-solid fa-arrow-left p-absolute text-white custom-carousel-icon"></i>
-        }
+        nextIcon={<CurvedArrow class_name="light-svg in-btn custom-btn" />}
+        prevIcon={<CurvedArrow class_name="light-svg in-btn custom-btn" />}
       >
         <Carousel.Item className="p-relative h-100">
           <div className="carousel-item-inner">
@@ -28,18 +27,16 @@ const Slider = () => {
               Let's make your best trip with us
             </p>
             <div className="d-flex flex-row mt-5 carousel-btns">
-              <button className="w-fit btn-default-light text-white">
-                <Link to="/trips">
-                  <span className="text-white">Explore Tours </span>
-                  <span className="text-white"> &rarr;</span>
-                </Link>
-              </button>
-              <button className="w-fit btn-default-white ms-4">
-                <Link to="/contact-us" className="text-white">
-                  <span className="text-white">Contact us </span>
-                  <span className="text-white"> &rarr;</span>
-                </Link>
-              </button>
+              <LightButton
+                button_text="Explore Tours"
+                button_link="/trips"
+                button_icon="icon"
+              />
+              <WhiteButton
+                button_text="Explore Tours"
+                button_link="/trips"
+                button_icon="icon"
+              />
             </div>
           </Carousel.Caption>
           <div className="slider-dark-panel carousel-caption bg-black opacity-50"></div>

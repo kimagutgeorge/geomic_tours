@@ -1,15 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import CurvedArrow from "../svg/CurvedArrorw";
 
 interface ButtonProps {
   button_text: string;
   button_icon?: string;
+  button_font_awesome?: string;
   button_link: string;
 }
-const lightButton = ({
+const LightButton = ({
   button_text,
   button_icon,
   button_link,
+  button_font_awesome,
 }: ButtonProps) => {
   return (
     <>
@@ -17,11 +20,12 @@ const lightButton = ({
         <Link to={button_link}>
           <span className="text-white">
             {button_text}{" "}
-            {button_icon && <img src={button_icon} style={{ width: "30px" }} />}
+            {button_icon && <CurvedArrow class_name="light-svg in-btn" />}
+            {button_font_awesome && <i className={button_font_awesome}></i>}
           </span>{" "}
         </Link>
       </button>
     </>
   );
 };
-export default lightButton;
+export default LightButton;

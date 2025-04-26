@@ -3,6 +3,17 @@
     font-family: "Poppins", sans-serif;
     color: #2d2c2c;
 }
+/* svg classes */
+.dark-svg{
+    stroke:#113d48;
+}
+.light-svg{
+    stroke: #ffffff;
+}
+.in-btn{
+    width: 30px;
+}
+/* end of svg */
 body{
     overflow-x: hidden;
 }
@@ -341,7 +352,7 @@ input[type=range]{
 }
 .carousel-control-next-icon,
 .carousel-control-prev-icon{
-    padding:10px 10px;
+    padding:15px 15px;
     background-color: #000;
     border-radius: 5px;
     background-image: none;
@@ -683,11 +694,24 @@ input[type=range]{
     font-weight: 600;
 }
 .card .btn-default-white{
-    border: 1px solid rgb(200, 200, 200);
-    padding: 5px 10px;
+    border: 1px solid #113d48;
+    padding: 8px 10px
+}
+.card .btn-default-white .text-white{
+    color:#113d48 !important;
+}
+.card .btn-default-white .dark-stroke{
+    stroke: #113d48;
+    fill: red;
 }
 .card .btn-default-white::before{
-    background-color: #bb4618;
+    background-color: #113d48;
+}
+.card .btn-default-white:hover .text-white{
+    color: #ffffff !important;
+}
+.card .btn-default-white:hover .dark-svg{
+    stroke: #ffffff;
 }
 .card .btn-default-white span{
     font-size: 15px;
@@ -906,6 +930,9 @@ input[type=range]{
 }
 button.btn.bg-primary:hover{
     background-color: #0a637a !important;
+}
+.bg-very-light{
+    background-color: #d8f3f9;
 }
 .touch-content{
     width: 230px;
@@ -1330,19 +1357,22 @@ form .contact-card .col-12 textarea{
 .carousel-control-prev,
 .carousel-control-next {
   position: absolute;
+  padding: 15px;
+  background-color: #000;
   left: 90%;
   height: fit-content;
   top: 50%;
   right: 20px;
-  width: auto;
-  height: auto;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
   transform: translateY(-50%);
-  opacity: 1;
+  opacity: 0.5;
 }
 
 /* Specific styling for the previous button (up arrow) */
 .carousel-control-prev {
-  transform: translateY(-100%) rotate(90deg); /* Move up and rotate to face up */
+  transform: translateY(-100%) rotate(270deg); /* Move up and rotate to face up */
   
 }
 
@@ -1355,13 +1385,10 @@ form .contact-card .col-12 textarea{
 /* Button styling */
 .custom-btn {
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 15px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
 }
 
 .custom-btn:hover {
