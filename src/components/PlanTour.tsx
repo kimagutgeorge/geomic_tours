@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 const PlanTour = () => {
   return (
     <div className="col-12 d-flex mt-10-vh plan-tour">
@@ -53,7 +54,7 @@ const PlanTour = () => {
           {/* see more */}
           <button className="btn-default-dark plan-tour-btn mt-2-vh">
             <span className="text-white">
-              Learn More <i className="fa-solid fa-arrow-right text-white"></i>
+              <Link className="text-white" to="/contact-us">Learn More <i className="fa-solid fa-arrow-right text-white"></i></Link>
             </span>
           </button>
         </div>

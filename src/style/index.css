@@ -901,6 +901,9 @@ input[type=range]{
     background-color: #113d48 !important;
     transition: 0.3s ease-in-out;
 }
+.custom-border.border{
+    border: 1px solid #113d48 !important;
+}
 button.btn.bg-primary:hover{
     background-color: #0a637a !important;
 }
@@ -1323,17 +1326,6 @@ form .contact-card .col-12 textarea{
     justify-content: center;
     align-items: center;
   }
-
-
-
-
-
-
-
-
-
-
-
 /* Position both buttons on the right side */
 .carousel-control-prev,
 .carousel-control-next {

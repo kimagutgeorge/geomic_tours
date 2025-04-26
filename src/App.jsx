@@ -12,6 +12,7 @@ import Contacts from "./views/Contact";
 import SingleDestination from "./views/SingleDestination";
 import SingleTrip from "./views/SingleTrip";
 import SingleBlog from "./views/SingleBlog";
+import Faqs from "./views/Faqs";
 
 const router = createBrowserRouter([
   {
@@ -58,6 +59,11 @@ const router = createBrowserRouter([
     path: "/blog/:blog",
     element: <SingleBlog/>,
     errorElement: <NotFound />
+  },
+  {
+    path: '/faqs',
+    element: <Faqs/>,
+    errorElement: <NotFound/>
   }
 ]);
 

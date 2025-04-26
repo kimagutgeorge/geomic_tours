@@ -91,9 +91,38 @@ const SingleTripContent = () => {
       heading: "headingOne",
       idCollapse: "#collapseOne",
       collapse: "collapseOne",
-      headingText: "How fit do I need to be to do this trek?",
+      headingText:
+        "Day 1 : Kathmandu to Pokhara (By flight or Bus), the city of Lakes, adventures and serenity.",
       content:
-        "Annapurna Base Camp is a Grade B or a moderately difficult trekking route. So any fit person can do this trek, even if you do not have any previous experience. You should be aware of what to expect and mentally prepare for it. Then, as long as you will too, you can.",
+        "Arrive at Tribhuwan International Airport, Kathmandu, you are welcomed by the team and then you will be transferred to your hotel. This trail goes through Ghorepani Poon Hill. Normally, the trek starts like Pokhara to Nayapul and ends like Phedi to Pokhara. While early travel tended to be slower, more dangerous, and more dominated by trade and migration, cultural and technological advances over many years have tended to mean that travel has become easier and more accessible. The evolution of technology in such diverse fields as horse tack and bullet trains has contributed to this trend.",
+    },
+    {
+      id: 2,
+      heading: "headingTwo",
+      idCollapse: "#collapseTwo",
+      collapse: "collapseTwo",
+      headingText: "Day 2 : Drive to Nayapul and trek to Ulleri",
+      content:
+        "While early travel tended to be slower, more dangerous, and more dominated by trade and migration, cultural and technological advances over many years have tended to mean that travel has become easier and more accessible. The evolution of technology in such diverse fields as horse tack and bullet trains has contributed to this trend.",
+    },
+    {
+      id: 3,
+      heading: "headingThree",
+      idCollapse: "#collapseThree",
+      collapse: "collapseThree",
+      headingText: "Day 3 : Trek to Ghorepani",
+      content:
+        "The Palace of Fifty five Windows: This magnificent palace was built during the reign of King Yakshya Malla in A.D. 1427 and was subsequently remodeled by King Bhupatindra Malla in the seventeenth century. Among the brick walls with their gracious setting and sculptural design, is a balcony with Fifty five Windows, considered to be a unique masterpiece of woodcarving.",
+    },
+    {
+      id: 4,
+      heading: "headingFour",
+      idCollapse: "#collapseFour",
+      collapse: "collapseFour",
+      headingText:
+        "Day 4 : Early trek to Poon Hill, Back to Ghorepani and Trek to Tadapani",
+      content:
+        "The Palace of Fifty five Windows: This magnificent palace was built during the reign of King Yakshya Malla in A.D. 1427 and was subsequently remodeled by King Bhupatindra Malla in the seventeenth century. Among the brick walls with their gracious setting and sculptural design, is a balcony with Fifty five Windows, considered to be a unique masterpiece of woodcarving.The Palace of Fifty five Windows: This magnificent palace was built during the reign of King Yakshya Malla in A.D. 1427 and was subsequently remodeled by King Bhupatindra Malla in the seventeenth century. Among the brick walls with their gracious setting and sculptural design, is a balcony with Fifty five Windows, considered to be a unique masterpiece of woodcarving.",
     },
   ];
   const [activeView, setActiveView] = useState("Overview");
@@ -364,198 +393,66 @@ const SingleTripContent = () => {
                   <div className="w-100">
                     {" "}
                     <p className="fs-3 section-title">Itinerary</p>
-                    <div className="accordion border-0" id="accordionExample">
-                      <div className="accordion-item border-0">
-                        <h2
-                          className="accordion-header d-flex flex-no-wrap"
-                          id="headingOne"
-                        >
+                    <div className="accordion border-0" id="accordionItinerary">
+                      {tour_itinerary.map((item, index) => (
+                        <div className="accordion-item border-0" key={item.id}>
+                          <h2
+                            className="accordion-header d-flex flex-no-wrap"
+                            id={item.heading}
+                          >
+                                <div
+                                  className={(tour_itinerary.length - 1 === index || index === 0) ? "icon d-flex justify-content-center bg-primary rounded-circle" : "icon d-flex justify-content-center rounded-circle"}
+                                  style={{
+                                    width: "50px",
+                                    height: "50px",
+                                    minWidth: "50px",
+                                  }}
+                                >
+                                  {(tour_itinerary.length - 1 === index || index  === 0) && (
+                                    <div className="d-flex flex-column justify-content-center h-100">
+                                    <i className="fa-solid fa-location-dot fs-5 text-white"></i>
+                                  </div>
+                                  )}
+                                  
+                                </div>
+                              
+
+                            <button
+                              className="accordion-button ms-4 fs-5 fs-5 section-title"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target={item.idCollapse}
+                              aria-expanded="true"
+                              aria-controls={item.collapse}
+                            >
+                              {item.headingText}
+                            </button>
+                          </h2>
                           <div
-                            className="icon d-flex justify-content-center bg-primary rounded-circle"
-                            style={{
-                              width: "50px",
-                              height: "50px",
-                              minWidth: "50px",
-                            }}
+                            id={item.collapse}
+                            className="accordion-collapse collapse show"
+                            aria-labelledby={item.heading}
+                            data-bs-parent="#accordionItinerary"
                           >
-                            <div className="d-flex flex-column justify-content-center h-100">
-                              <i className="fa-solid fa-location-dot fs-5 text-white"></i>
-                            </div>
-                          </div>
-                          <button
-                            className="accordion-button ms-4 fs-5 fs-5 section-title"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne"
-                            aria-expanded="true"
-                            aria-controls="collapseOne"
-                          >
-                            Day 1 : Kathmandu to Pokhara (By flight or Bus), the
-                            city of Lakes, adventures and serenity.
-                          </button>
-                        </h2>
-                        <div
-                          id="collapseOne"
-                          className="accordion-collapse collapse show"
-                          aria-labelledby="headingOne"
-                          data-bs-parent="#accordionExample"
-                        >
-                          <div className="accordion-body">
-                            Arrive at Tribhuwan International Airport,
-                            Kathmandu, you are welcomed by the team and then you
-                            will be transferred to your hotel. This trail goes
-                            through Ghorepani Poon Hill. Normally, the trek
-                            starts like Pokhara to Nayapul and ends like Phedi
-                            to Pokhara. While early travel tended to be slower,
-                            more dangerous, and more dominated by trade and
-                            migration, cultural and technological advances over
-                            many years have tended to mean that travel has
-                            become easier and more accessible. The evolution of
-                            technology in such diverse fields as horse tack and
-                            bullet trains has contributed to this trend.
+                            <div className="accordion-body d-flex flex-no-wrap">
+                            <div
+                                  className="icon d-flex justify-content-center rounded-circle"
+                                  style={{
+                                    width: "50px",
+                                    height: "50px",
+                                    minWidth: "50px",
+                                  }}
+                                >
+                                </div>
+                              <div className="ms-4" >
+                                {item.content}
+                              </div>
+                              </div>
                           </div>
                         </div>
-                      </div>
+                      ))}
+
                       {/* end of item */}
-                      <div className="accordion-item border-0">
-                        <h2
-                          className="accordion-header d-flex flex-no-wrap"
-                          id="headingTwo"
-                        >
-                          <div
-                            className="icon d-flex justify-content-center"
-                            style={{
-                              width: "50px",
-                              height: "50px",
-                              minWidth: "50px",
-                            }}
-                          ></div>
-                          <button
-                            className="accordion-button ms-4 fs-5 section-title"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo"
-                            aria-expanded="true"
-                            aria-controls="collapseTwo"
-                          >
-                            Day 2 : Drive to Nayapul and trek to Ulleri
-                          </button>
-                        </h2>
-                        <div
-                          id="collapseTwo"
-                          className="accordion-collapse collapse"
-                          aria-labelledby="headingTwo"
-                          data-bs-parent="#accordionExample"
-                        >
-                          <div className="accordion-body">
-                            While early travel tended to be slower, more
-                            dangerous, and more dominated by trade and
-                            migration, cultural and technological advances over
-                            many years have tended to mean that travel has
-                            become easier and more accessible. The evolution of
-                            technology in such diverse fields as horse tack and
-                            bullet trains has contributed to this trend.
-                          </div>
-                        </div>
-                      </div>
-                      {/* end of item */}
-                      <div className="accordion-item border-0">
-                        <h2
-                          className="accordion-header d-flex flex-no-wrap"
-                          id="headingTwo"
-                        >
-                          <div
-                            className="icon d-flex justify-content-center"
-                            style={{
-                              width: "50px",
-                              height: "50px",
-                              minWidth: "50px",
-                            }}
-                          ></div>
-                          <button
-                            className="accordion-button ms-4 fs-5 section-title"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo"
-                            aria-expanded="true"
-                            aria-controls="collapseTwo"
-                          >
-                            Day 3 : Trek to Ghorepani
-                          </button>
-                        </h2>
-                        <div
-                          id="collapseTwo"
-                          className="accordion-collapse collapse"
-                          aria-labelledby="headingTwo"
-                          data-bs-parent="#accordionExample"
-                        >
-                          <div className="accordion-body">
-                            The Palace of Fifty five Windows: This magnificent
-                            palace was built during the reign of King Yakshya
-                            Malla in A.D. 1427 and was subsequently remodeled by
-                            King Bhupatindra Malla in the seventeenth century.
-                            Among the brick walls with their gracious setting
-                            and sculptural design, is a balcony with Fifty five
-                            Windows, considered to be a unique masterpiece of
-                            woodcarving.
-                          </div>
-                        </div>
-                      </div>
-                      {/* end of item */}
-                      <div className="accordion-item border-0">
-                        <h2
-                          className="accordion-header d-flex flex-no-wrap"
-                          id="headingThree"
-                        >
-                          <div
-                            className="icon d-flex justify-content-center bg-primary rounded-circle"
-                            style={{
-                              width: "50px",
-                              height: "50px",
-                              minWidth: "50px",
-                            }}
-                          >
-                            <div className="d-flex flex-column justify-content-center h-100">
-                              <i className="fa-solid fa-location-dot fs-5 text-white"></i>
-                            </div>
-                          </div>
-                          <button
-                            className="accordion-button ms-4 fs-5 fs-5 section-title"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree"
-                            aria-expanded="true"
-                            aria-controls="collapseThree"
-                          >
-                            Day 4 : Early trek to Poon Hill, Back to Ghorepani
-                            and Trek to Tadapani
-                          </button>
-                        </h2>
-                        <div
-                          id="collapseThree"
-                          className="accordion-collapse collapse"
-                          aria-labelledby="headingThree"
-                          data-bs-parent="#accordionExample"
-                        >
-                          <div className="accordion-body">
-                            The Palace of Fifty five Windows: This magnificent
-                            palace was built during the reign of King Yakshya
-                            Malla in A.D. 1427 and was subsequently remodeled by
-                            King Bhupatindra Malla in the seventeenth century.
-                            Among the brick walls with their gracious setting
-                            and sculptural design, is a balcony with Fifty five
-                            Windows, considered to be a unique masterpiece of
-                            woodcarving.The Palace of Fifty five Windows: This
-                            magnificent palace was built during the reign of
-                            King Yakshya Malla in A.D. 1427 and was subsequently
-                            remodeled by King Bhupatindra Malla in the
-                            seventeenth century. Among the brick walls with
-                            their gracious setting and sculptural design, is a
-                            balcony with Fifty five Windows, considered to be a
-                            unique masterpiece of woodcarving.
-                          </div>
-                        </div>
-                      </div>
                     </div>
                   </div>
                 )}
@@ -589,7 +486,7 @@ const SingleTripContent = () => {
                   <div className="w-100">
                     {" "}
                     <p className="fs-3 section-title">FAQs</p>
-                    <div className="accordion mt-4" id="accordionExample">
+                    <div className="accordion mt-4" id="accordionFaqs">
                       {faqs.map((faq) => (
                         <div className="accordion-item border-0">
                           <h2
@@ -597,7 +494,7 @@ const SingleTripContent = () => {
                             id={faq.heading}
                           >
                             <button
-                              className="accordion-button ms-4 fs-5 fs-5 section-title"
+                              className="accordion-button fs-5 fs-5 section-title"
                               type="button"
                               data-bs-toggle="collapse"
                               data-bs-target={faq.idCollapse}
@@ -610,8 +507,8 @@ const SingleTripContent = () => {
                           <div
                             id={faq.collapse}
                             className="accordion-collapse collapse show"
-                            aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample"
+                            aria-labelledby={faq.heading}
+                            data-bs-parent="#accordionFaqs"
                           >
                             <div className="accordion-body">{faq.content}</div>
                           </div>

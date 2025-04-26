@@ -17,7 +17,7 @@ const Navbar = () => {
           </p>
         </div>
         <div className="col-6 flex-row-reverse d-flex  flex-nowrap">
-          <Link to="/support" className="ms-2 dft-color">
+          <Link to="/contact-us" className="ms-2 dft-color">
             support
           </Link>
           <Link to="/faqs" className="ms-2 dft-color">
