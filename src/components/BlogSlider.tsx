@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import DarkButton from "./buttons/DarkButton";
-import WhiteButton from "./buttons/WhiteButton";
+import DefaultButton from "./buttons/DefaultButton";
 const BlogCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const cardWrapperRef = useRef(null);
@@ -43,7 +42,10 @@ const BlogCarousel = () => {
             </h5>
           </div>
           <div className="col-6 d-flex justify-content-end">
-            <DarkButton
+            <DefaultButton
+              button_classname="w-fit btn-default-dark"
+              button_icon_color="light-svg in-btn"
+              button_span_color="text-white"
               button_text="See More Articles"
               button_icon="icon"
               button_link="/contact-us"
@@ -94,8 +96,11 @@ const BlogCarousel = () => {
                       team
                     </h5>
                     <div className="col-12 d-flex mt-5-vh">
-                      <WhiteButton
-                        button_text="Read More "
+                      <DefaultButton
+                        button_classname="w-fit btn-default-white "
+                        button_icon_color="dark-svg in-btn"
+                        button_span_color="text-white"
+                        button_text="Read More"
                         button_icon="icon"
                         button_link="#"
                       />

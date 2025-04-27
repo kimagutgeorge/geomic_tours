@@ -1,4 +1,5 @@
 import React from "react";
+import DefaultButton from "../buttons/DefaultButton";
 
 const Services = () => {
   return (
@@ -30,12 +31,14 @@ const Services = () => {
                 </p>
               </div>
               <div className="col-12 d-flex  mt-2 w-100 d-flex justify-content-center">
-                <a href="#" className="btn btn-default-white">
-                  <span className="dft-color">
-                    View All{" "}
-                    <i className="fa-solid fa-arrow-right dft-color"></i>
-                  </span>
-                </a>
+                <DefaultButton
+                  button_classname="btn btn-default-white"
+                  button_span_color="dft-color"
+                  button_link="#"
+                  button_text="View All"
+                  button_icon="icon"
+                  button_icon_color="dark-svg in-btn"
+                />
               </div>
             </div>
           </div>
@@ -59,12 +62,14 @@ const Services = () => {
                 </p>
               </div>
               <div className="col-12 d-flex  mt-2 w-100 d-flex justify-content-center">
-                <a href="#" className="btn btn-default-white">
-                  <span className="dft-color">
-                    View All{" "}
-                    <i className="fa-solid fa-arrow-right dft-color"></i>
-                  </span>
-                </a>
+                <DefaultButton
+                  button_classname="btn btn-default-white"
+                  button_span_color="dft-color"
+                  button_link="#"
+                  button_text="View All"
+                  button_icon="icon"
+                  button_icon_color="dark-svg in-btn"
+                />
               </div>
             </div>
           </div>
@@ -88,12 +93,14 @@ const Services = () => {
                 </p>
               </div>
               <div className="col-12 d-flex  mt-2 w-100 d-flex justify-content-center">
-                <a href="#" className="btn btn-default-white">
-                  <span className="dft-color">
-                    View All{" "}
-                    <i className="fa-solid fa-arrow-right dft-color"></i>
-                  </span>
-                </a>
+                <DefaultButton
+                  button_classname="btn btn-default-white"
+                  button_span_color="dft-color"
+                  button_link="#"
+                  button_text="View All"
+                  button_icon="icon"
+                  button_icon_color="dark-svg in-btn"
+                />
               </div>
             </div>
           </div>
@@ -119,12 +126,14 @@ const Services = () => {
                 </p>
               </div>
               <div className="col-12 d-flex  mt-2 w-100 d-flex justify-content-center">
-                <a href="#" className="btn btn-default-white">
-                  <span className="dft-color">
-                    View All{" "}
-                    <i className="fa-solid fa-arrow-right dft-color"></i>
-                  </span>
-                </a>
+                <DefaultButton
+                  button_classname="btn btn-default-white"
+                  button_span_color="dft-color"
+                  button_link="#"
+                  button_text="View All"
+                  button_icon="icon"
+                  button_icon_color="dark-svg in-btn"
+                />
               </div>
             </div>
           </div>
@@ -150,12 +159,14 @@ const Services = () => {
                 </p>
               </div>
               <div className="col-12 d-flex  mt-2 w-100 d-flex justify-content-center">
-                <a href="#" className="btn btn-default-white">
-                  <span className="dft-color">
-                    View All{" "}
-                    <i className="fa-solid fa-arrow-right dft-color"></i>
-                  </span>
-                </a>
+                <DefaultButton
+                  button_classname="btn btn-default-white"
+                  button_span_color="dft-color"
+                  button_link="#"
+                  button_text="View All"
+                  button_icon="icon"
+                  button_icon_color="dark-svg in-btn"
+                />
               </div>
             </div>
           </div>
@@ -179,12 +190,20 @@ const Services = () => {
                 </p>
               </div>
               <div className="col-12 d-flex  mt-2 w-100 d-flex justify-content-center">
-                <a href="#" className="btn btn-default-white">
+                {/* <a href="#" className="btn btn-default-white">
                   <span className="dft-color">
                     View All{" "}
                     <i className="fa-solid fa-arrow-right dft-color"></i>
                   </span>
-                </a>
+                </a> */}
+                <DefaultButton
+                  button_classname="btn btn-default-white"
+                  button_span_color="dft-color"
+                  button_link="#"
+                  button_text="View All"
+                  button_icon="icon"
+                  button_icon_color="dark-svg in-btn"
+                />
               </div>
             </div>
           </div>
@@ -210,12 +229,14 @@ const Services = () => {
                 </p>
               </div>
               <div className="col-12 d-flex  mt-2 w-100 d-flex justify-content-center">
-                <a href="#" className="btn btn-default-white">
-                  <span className="dft-color">
-                    View All{" "}
-                    <i className="fa-solid fa-arrow-right dft-color"></i>
-                  </span>
-                </a>
+                <DefaultButton
+                  button_classname="btn btn-default-white"
+                  button_span_color="dft-color"
+                  button_link="#"
+                  button_text="View All"
+                  button_icon="icon"
+                  button_icon_color="dark-svg in-btn"
+                />
               </div>
             </div>
           </div>
@@ -239,12 +260,14 @@ const Services = () => {
                 </p>
               </div>
               <div className="col-12 d-flex  mt-2 w-100 d-flex justify-content-center">
-                <a href="#" className="btn btn-default-white">
-                  <span className="dft-color">
-                    View All{" "}
-                    <i className="fa-solid fa-arrow-right dft-color"></i>
-                  </span>
-                </a>
+                <DefaultButton
+                  button_classname="btn btn-default-white"
+                  button_span_color="dft-color"
+                  button_link="#"
+                  button_text="View All"
+                  button_icon="icon"
+                  button_icon_color="dark-svg in-btn"
+                />
               </div>
             </div>
           </div>

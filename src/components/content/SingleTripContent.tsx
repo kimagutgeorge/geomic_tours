@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "leaflet/dist/leaflet.css";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import DefaultButton from "../buttons/DefaultButton";
 // import
 
 const SingleTripContent = () => {
@@ -400,22 +401,26 @@ const SingleTripContent = () => {
                             className="accordion-header d-flex flex-no-wrap"
                             id={item.heading}
                           >
-                                <div
-                                  className={(tour_itinerary.length - 1 === index || index === 0) ? "icon d-flex justify-content-center bg-primary rounded-circle" : "icon d-flex justify-content-center rounded-circle"}
-                                  style={{
-                                    width: "50px",
-                                    height: "50px",
-                                    minWidth: "50px",
-                                  }}
-                                >
-                                  {(tour_itinerary.length - 1 === index || index  === 0) && (
-                                    <div className="d-flex flex-column justify-content-center h-100">
-                                    <i className="fa-solid fa-location-dot fs-5 text-white"></i>
-                                  </div>
-                                  )}
-                                  
+                            <div
+                              className={
+                                tour_itinerary.length - 1 === index ||
+                                index === 0
+                                  ? "icon d-flex justify-content-center bg-primary rounded-circle"
+                                  : "icon d-flex justify-content-center rounded-circle"
+                              }
+                              style={{
+                                width: "50px",
+                                height: "50px",
+                                minWidth: "50px",
+                              }}
+                            >
+                              {(tour_itinerary.length - 1 === index ||
+                                index === 0) && (
+                                <div className="d-flex flex-column justify-content-center h-100">
+                                  <i className="fa-solid fa-location-dot fs-5 text-white"></i>
                                 </div>
-                              
+                              )}
+                            </div>
 
                             <button
                               className="accordion-button ms-4 fs-5 fs-5 section-title"
@@ -435,19 +440,16 @@ const SingleTripContent = () => {
                             data-bs-parent="#accordionItinerary"
                           >
                             <div className="accordion-body d-flex flex-no-wrap">
-                            <div
-                                  className="icon d-flex justify-content-center rounded-circle"
-                                  style={{
-                                    width: "50px",
-                                    height: "50px",
-                                    minWidth: "50px",
-                                  }}
-                                >
-                                </div>
-                              <div className="ms-4" >
-                                {item.content}
-                              </div>
-                              </div>
+                              <div
+                                className="icon d-flex justify-content-center rounded-circle"
+                                style={{
+                                  width: "50px",
+                                  height: "50px",
+                                  minWidth: "50px",
+                                }}
+                              ></div>
+                              <div className="ms-4">{item.content}</div>
+                            </div>
                           </div>
                         </div>
                       ))}
@@ -831,9 +833,12 @@ const SingleTripContent = () => {
                     ></textarea>
                   </div>
                   <div className="form-group">
-                    <button className="btn bg-primary rounded-0 p-3 mt-3 w-100 text-white">
-                      Send Email
-                    </button>
+                    <DefaultButton
+                      button_text="Send Email"
+                      button_link="#"
+                      button_classname="btn bg-primary rounded-0 p-3 mt-3 w-100 text-white"
+                      button_span_color="text-white"
+                    />
                   </div>
                 </div>
               </div>
@@ -885,9 +890,12 @@ const SingleTripContent = () => {
                     {/* end of cards inner */}
                   </div>
                   <div className="w-100 d-flex p-2 mt-2 justify-content-center">
-                    <button className="btn-default-dark w-100">
-                      <span className="text-white">CHECK AVAILABILITY</span>
-                    </button>
+                    <DefaultButton
+                      button_text="CHECK AVAILABILITY"
+                      button_link="#"
+                      button_classname="btn-default-dark w-100"
+                      button_span_color="text-white"
+                    />
                   </div>
                   <p className="mt-4 f-14 text-muted">
                     Need help with booking?

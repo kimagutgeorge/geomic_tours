@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import { Link } from "react-router";
+import DefaultButton from "../buttons/DefaultButton";
 
 const BlogsContent = () => {
   return (
@@ -72,11 +73,17 @@ const BlogsContent = () => {
                   green innovations seamlessly integrated into the fabric of
                   EcoLand, creating
                 </p>
-                <button className="btn-default-light">
+                {/* <button className="btn-default-light">
                   <Link to={`/blog/This blog is going to be viral`}>
                     <span className="text-white">Read More</span>
                   </Link>
-                </button>
+                </button> */}
+                <DefaultButton
+                  button_text="Search"
+                  button_link="#"
+                  button_classname="btn-default-light"
+                  button_span_color="text-white"
+                />
               </div>
             </div>
           </div>
@@ -90,9 +97,12 @@ const BlogsContent = () => {
               </h4>
               <div className="w-100 search-bg d-flex flex-no-wrap justify-content-end">
                 <input type="text" />
-                <button className="btn-default-dark">
-                  <span className="text-white">Search</span>
-                </button>
+                <DefaultButton
+                  button_text="Search"
+                  button_link="#"
+                  button_classname="btn-default-dark"
+                  button_span_color="text-white"
+                />
               </div>
             </div>
             <div className="card mt-4">

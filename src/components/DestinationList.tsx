@@ -49,9 +49,7 @@ const DestinationList = () => {
                     alt="Card image cap"
                   />
                 </div>
-                <div className="card-body mt-2">
-                  {destination.name} <i className="fa-solid fa-arrow-right"></i>
-                </div>
+                <div className="card-body mt-2 ms-4">{destination.name}</div>
               </Link>
             </div>
           ))}

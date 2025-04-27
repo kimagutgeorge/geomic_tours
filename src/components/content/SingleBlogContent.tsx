@@ -1,5 +1,6 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
+import DefaultButton from "../buttons/DefaultButton";
 
 const SingleBlogContent = () => {
   return (
@@ -111,9 +112,12 @@ const SingleBlogContent = () => {
               </h4>
               <div className="w-100 search-bg d-flex flex-no-wrap justify-content-end">
                 <input type="text" />
-                <button className="btn-default-dark">
-                  <span className="text-white">Search</span>
-                </button>
+                <DefaultButton
+                  button_text="Search"
+                  button_link="#"
+                  button_classname="btn-default-dark"
+                  button_span_color="text-white"
+                />
               </div>
             </div>
             <div className="card mt-4">

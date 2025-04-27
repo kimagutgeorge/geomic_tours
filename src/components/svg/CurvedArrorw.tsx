@@ -1,7 +1,7 @@
 import React from "react";
 
 interface CurvedArrowProps {
-  class_name: string;
+  class_name?: string;
 }
 const CurvedArrow = ({ class_name }: CurvedArrowProps) => {
   return (

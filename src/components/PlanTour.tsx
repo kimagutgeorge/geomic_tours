@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
+import DefaultButton from "./buttons/DefaultButton";
 const PlanTour = () => {
   return (
     <div className="col-12 d-flex mt-10-vh plan-tour">
@@ -52,11 +53,14 @@ const PlanTour = () => {
             </div>
           </div>
           {/* see more */}
-          <button className="btn-default-dark plan-tour-btn mt-2-vh">
-            <span className="text-white">
-              <Link className="text-white" to="/contact-us">Learn More <i className="fa-solid fa-arrow-right text-white"></i></Link>
-            </span>
-          </button>
+          <DefaultButton
+            button_text="Learn More"
+            button_link="/contact-us"
+            button_icon="icon"
+            button_icon_color="light-svg in-btn"
+            button_classname="btn-default-dark plan-tour-btn mt-2-vh"
+            button_span_color="text-white"
+          />
         </div>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import DefaultButton from "./buttons/DefaultButton";
 
 const DestinationCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -79,11 +80,19 @@ const DestinationCarousel = () => {
                       </p>
                     </div>
                     <div className="col-6 d-flex justify-content-end">
-                      <a href="#" className="btn btn-default-white">
+                      {/* <a href="#" className="btn btn-default-white">
                         <span className="dft-color">
                           Book Now <i className="fa-solid fa-arrow-right"></i>
                         </span>
-                      </a>
+                      </a> */}
+                      <DefaultButton
+                        button_classname="btn-default-white"
+                        button_link="/trip: Mobasa"
+                        button_span_color="dft-color"
+                        button_icon="icon"
+                        button_icon_color="dark-svg in-btn"
+                        button_text="Book Now"
+                      />
                     </div>
                   </div>
                 </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router";
+import DefaultButton from "../buttons/DefaultButton";
 
 const TripsContent = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -289,11 +290,17 @@ const TripsContent = () => {
                         </div>
                       </div>
                       <div className="w-100 card-btn d-flex justify-content-center mt-4">
-                        <button className="btn-default-light w-100 mt-2">
+                        {/* <button className="btn-default-light w-100 mt-2">
                           <Link to={`/trip/${trip.name}`}>
                             <span className="text-white">View Details</span>
                           </Link>
-                        </button>
+                        </button> */}
+                        <DefaultButton
+                          button_text="View Details"
+                          button_link="`/trip/${trip.name}`"
+                          button_classname="btn-default-light w-100 mt-2"
+                          button_span_color="text-white"
+                        />
                       </div>
                       <div className="w-100 mt-2">
                         <p

@@ -9,9 +9,11 @@
 }
 .light-svg{
     stroke: #ffffff;
+    transition: 0.3s ease-in-out;
 }
 .in-btn{
     width: 30px;
+    transition: 0.3s ease-in-out;
 }
 /* end of svg */
 body{
@@ -83,6 +85,7 @@ input[type=range]{
 }
 .dft-color{
     color: #2d2c2c !important;
+    transition: 0.3s ease-in-out;
 }
 .dft-color-3{
     color: #8a8e99;
@@ -279,9 +282,7 @@ input[type=range]{
     font-size: 20px;
     transition: width 0.4s ease;
   }
-  .btn-default-white:hover > span.text-white{
-    color:#2d2c2c !important;
-  }
+ 
 .carousel.slide.custom-slider,
 .carousel.slide.custom-slider .carousel-item,
 .carousel.slide.custom-slider .carousel-item .carousel-item-inner,
@@ -700,19 +701,14 @@ input[type=range]{
 .card .btn-default-white .text-white{
     color:#113d48 !important;
 }
-.card .btn-default-white .dark-stroke{
-    stroke: #113d48;
-    fill: red;
-}
+
 .card .btn-default-white::before{
     background-color: #113d48;
 }
 .card .btn-default-white:hover .text-white{
     color: #ffffff !important;
 }
-.card .btn-default-white:hover .dark-svg{
-    stroke: #ffffff;
-}
+
 .card .btn-default-white span{
     font-size: 15px;
 }
@@ -1394,13 +1390,21 @@ form .contact-card .col-12 textarea{
 .custom-btn:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-
-
-
-
-
-
-
+.btn-default-white:hover .text-white{
+    transition: 0.3s ease-in-out;
+}
+.btn-default-white:hover .text-white{
+    color:#113d48 !important;
+  }
+  .btn-default-white:hover .light-svg{
+    stroke: #113d48 !important
+  }
+  .btn-default-white:hover .dft-color{
+    color: #ffffff !important;
+  }
+  .btn-default-white:hover .dark-svg{
+    stroke: #ffffff;
+  }
 
 
 

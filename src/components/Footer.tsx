@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
+import DefaultButton from "./buttons/DefaultButton";
 
 const Footer = () => {
   return (
@@ -14,12 +15,14 @@ const Footer = () => {
           <div className="col-7">
             <div className="form-group d-flex flex-no-wrap">
               <input type="text" placeholder="Enter Your Email" />
-              <button className="btn-default-dark">
-                <span className="text-white">
-                  Subscribe{" "}
-                  <i className="fa-solid fa-paper-plane text-white"></i>
-                </span>
-              </button>
+              <DefaultButton
+                button_classname="btn-default-dark"
+                button_icon_color="light-svg in-btn"
+                button_span_color="text-white"
+                button_text="Subscribe"
+                button_font_awesome="fa-solid fa-paper-plane text-white"
+                button_link="#"
+              />
             </div>
           </div>
         </div>

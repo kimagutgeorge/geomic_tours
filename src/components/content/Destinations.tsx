@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import DefaultButton from "../buttons/DefaultButton";
 
 const Destinations = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -60,12 +61,14 @@ const Destinations = () => {
             <div className="card-inner-dark-layout bg-black position-absolute w-100 h-100"></div>
             <div className="card-inner-text position-absolute d-flex h-100 w-100 flex-column justify-content-end">
               <h4 className="m-2 text-white f-15">Maasai Mara</h4>
-              <button className="btn-default-white m-2">
-                <span className="text-white">
-                  View All{" "}
-                  <i className="fa-solid fa-arrow-right text-white"></i>
-                </span>
-              </button>
+              <DefaultButton
+                button_text="View All"
+                button_link="{`/destination/Mombasa"
+                button_classname="btn-default-white m-2"
+                button_span_color="text-white"
+                button_icon="icon"
+                button_icon_color="dark-svg in-btn"
+              />
             </div>
           </div>
         </div>
@@ -77,12 +80,14 @@ const Destinations = () => {
             <div className="card-inner-dark-layout bg-black position-absolute w-100 h-100"></div>
             <div className="card-inner-text position-absolute d-flex h-100 w-100 flex-column justify-content-end">
               <h4 className="m-2 text-white f-15">Lk. Bogoria</h4>
-              <button className="btn-default-white m-2">
-                <span className="text-white">
-                  View All{" "}
-                  <i className="fa-solid fa-arrow-right text-white"></i>
-                </span>
-              </button>
+              <DefaultButton
+                button_text="View All"
+                button_link="{`/destination/Mombasa"
+                button_classname="btn-default-white m-2"
+                button_span_color="text-white"
+                button_icon="icon"
+                button_icon_color="dark-svg in-btn"
+              />
             </div>
           </div>
         </div>
@@ -94,12 +99,14 @@ const Destinations = () => {
             <div className="card-inner-dark-layout bg-black position-absolute w-100 h-100"></div>
             <div className="card-inner-text position-absolute d-flex h-100 w-100 flex-column justify-content-end">
               <h4 className="m-2 text-white f-15">Mombasa</h4>
-              <button className="btn-default-white m-2">
-                <span className="text-white">
-                  View All{" "}
-                  <i className="fa-solid fa-arrow-right text-white"></i>
-                </span>
-              </button>
+              <DefaultButton
+                button_text="View All"
+                button_link="{`/destination/Mombasa"
+                button_classname="btn-default-white m-2"
+                button_span_color="text-white"
+                button_icon="icon"
+                button_icon_color="dark-svg in-btn"
+              />
             </div>
           </div>
         </div>
@@ -111,12 +118,14 @@ const Destinations = () => {
             <div className="card-inner-dark-layout bg-black position-absolute w-100 h-100"></div>
             <div className="card-inner-text position-absolute d-flex h-100 w-100 flex-column justify-content-end">
               <h4 className="m-2 text-white f-15">Mt. Kenya</h4>
-              <button className="btn-default-white m-2">
-                <span className="text-white">
-                  View All{" "}
-                  <i className="fa-solid fa-arrow-right text-white"></i>
-                </span>
-              </button>
+              <DefaultButton
+                button_text="View All"
+                button_link="{`/destination/Mombasa"
+                button_classname="btn-default-white m-2"
+                button_span_color="text-white"
+                button_icon="icon"
+                button_icon_color="dark-svg in-btn"
+              />
             </div>
           </div>
         </div>
@@ -128,12 +137,15 @@ const Destinations = () => {
             <div className="card-inner-dark-layout bg-black position-absolute w-100 h-100"></div>
             <div className="card-inner-text position-absolute d-flex h-100 w-100 flex-column justify-content-end">
               <h4 className="m-2 text-white f-15">Taita Taveta</h4>
-              <button className="btn-default-white m-2">
-                <span className="text-white">
-                  View All{" "}
-                  <i className="fa-solid fa-arrow-right text-white"></i>
-                </span>
-              </button>
+
+              <DefaultButton
+                button_text="View All"
+                button_link="{`/destination/Mombasa"
+                button_classname="btn-default-white m-2"
+                button_span_color="text-white"
+                button_icon="icon"
+                button_icon_color="dark-svg in-btn"
+              />
             </div>
           </div>
         </div>

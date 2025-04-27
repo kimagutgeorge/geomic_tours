@@ -7,20 +7,28 @@ interface ButtonProps {
   button_icon?: string;
   button_font_awesome?: string;
   button_link: string;
+  button_classname: string;
+  button_icon_color?: string;
+  button_span_color: string;
 }
-const DarkButton = ({
+//w-fit btn-default-dark text-white
+// light-svg in-btn
+const DefaultButton = ({
   button_text,
   button_icon,
   button_link,
   button_font_awesome,
+  button_classname,
+  button_icon_color,
+  button_span_color,
 }: ButtonProps) => {
   return (
     <>
-      <button className="w-fit btn-default-dark text-white">
+      <button className={button_classname}>
         <Link to={button_link}>
-          <span className="text-white">
+          <span className={button_span_color}>
             {button_text}{" "}
-            {button_icon && <CurvedArrow class_name="light-svg in-btn" />}
+            {button_icon && <CurvedArrow class_name={button_icon_color} />}
             {button_font_awesome && <i className={button_font_awesome}></i>}
           </span>
         </Link>
@@ -28,4 +36,4 @@ const DarkButton = ({
     </>
   );
 };
-export default DarkButton;
+export default DefaultButton;

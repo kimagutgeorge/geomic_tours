@@ -4,7 +4,7 @@ import HomeBanner from "../components/HomeBanner";
 import PlanTour from "../components/PlanTour";
 import Footer from "../components/Footer";
 import BackToTop from "../components/BackToTop";
-import Services from "../components/Services";
+import Services from "../components/content/Services";
 import DestinationCarousel from "../components/DestinationCarousel";
 
 const About = () => {

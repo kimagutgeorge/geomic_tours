@@ -1,6 +1,7 @@
 import React from "react";
 import "leaflet/dist/leaflet.css";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import DefaultButton from "../buttons/DefaultButton";
 
 const ContactsContent = () => {
   const position = [-3.9768291, 39.7137181]; // [latitude, longitude]
@@ -139,12 +140,13 @@ const ContactsContent = () => {
                   className="form-group col-12  d-flex flex-no-wrap rounded-0 mt-4"
                   style={{ border: "0px" }}
                 >
-                  <button className="btn-default-dark">
-                    <span className="text-white">
-                      Send Message{" "}
-                      <i className="fa-solid fa-paper-plane text-white"></i>
-                    </span>
-                  </button>
+                  <DefaultButton
+                    button_classname="btn-default-dark"
+                    button_span_color="text-white"
+                    button_link="#"
+                    button_text="Send Message"
+                    button_font_awesome="fa-solid fa-paper-plane text-white"
+                  />
                 </div>
                 {/* end of form class */}
               </div>

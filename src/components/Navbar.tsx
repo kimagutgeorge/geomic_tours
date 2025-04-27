@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
-import DarkButton from "./buttons/DarkButton";
+import DarkButton from "./buttons/DefaultButton";
 
 const Navbar = () => {
   return (
@@ -61,9 +61,12 @@ const Navbar = () => {
         </div>
         <div className="col-3 d-flex flex-row-reverse">
           <DarkButton
+            button_classname="w-fit btn-default-dark text-white"
+            button_icon_color="light-svg in-btn"
             button_text="Request A Quote"
             button_icon="icon"
             button_link="/contact-us"
+            button_span_color="text-white"
           />
         </div>
       </div>
