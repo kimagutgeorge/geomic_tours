@@ -297,7 +297,7 @@ const TripsContent = () => {
                         </button> */}
                         <DefaultButton
                           button_text="View Details"
-                          button_link="`/trip/${trip.name}`"
+                          button_link={`/trip/${trip.name}`}
                           button_classname="btn-default-light w-100 mt-2"
                           button_span_color="text-white"
                         />

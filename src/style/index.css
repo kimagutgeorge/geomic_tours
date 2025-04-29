@@ -546,6 +546,7 @@ input[type=range]{
     border:0px;
     border-radius: 15px;
 }
+
 .destinations .card-1,
 .destinations .card-1-right{
     top: 10%;
@@ -606,6 +607,27 @@ input[type=range]{
 .cursor-follower-text-inner-inner p{
     margin-top: 10px;
 }
+
+/* destination carousel */
+.destinations .destination-inner {
+    -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+  }
+  
+  .destinations .destination-inner::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome/Safari */
+  }
+  
+  .destinations .hidden-card {
+    display: none;
+  }
+  
+  .destinations .card {
+    transition: all 0.3s ease;
+    scroll-snap-align: center;
+  }
+  
+/* end of carousel */
 .plan-tour{
     height: 90vh;
     width:86%;
@@ -1405,6 +1427,16 @@ form .contact-card .col-12 textarea{
   .btn-default-white:hover .dark-svg{
     stroke: #ffffff;
   }
+  .destinations .card.col-4 .btn-default-white{
+    border: 1px solid #ffffff !important;
+}
+.destinations .card.col-4 .btn-default-white .dark-svg{
+    stroke: #ffffff;
+}
+
+.destinations .card.col-4 .btn-default-white .text-white{
+    color: #ffffff !important
+}
 
 
 

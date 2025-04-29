@@ -79,7 +79,7 @@ const BlogsContent = () => {
                   </Link>
                 </button> */}
                 <DefaultButton
-                  button_text="Search"
+                  button_text="Read More"
                   button_link="#"
                   button_classname="btn-default-light"
                   button_span_color="text-white"
