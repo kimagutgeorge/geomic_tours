@@ -1437,15 +1437,7 @@ form .contact-card .col-12 textarea{
 .destinations .card.col-4 .btn-default-white .text-white{
     color: #ffffff !important
 }
-
-
-
-
-
-
-
-  /* responsiveness */
-  @keyframes backToTop {
+@keyframes backToTop {
     0%{
       margin-top: -40px;
       opacity: 0;  
@@ -1454,4 +1446,14 @@ form .contact-card .col-12 textarea{
         margin-top: 0px;
         opacity: 1;  
     }
+}
+
+
+
+
+
+
+  /* responsiveness */
+@media only screen and (max-width: 1225px) {
+    
 }

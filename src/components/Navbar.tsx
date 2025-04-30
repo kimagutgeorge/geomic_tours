@@ -33,7 +33,15 @@ const Navbar = () => {
           </select>
         </div>
       </div>
-      <div className="row col-12 d-flex flex-nowrap position-relative">
+      <div
+        className="w-100 col-12 d-flex flex-nowrap position-sticky bg-white p-3"
+        style={{
+          position: "sticky",
+          top: "0",
+          zIndex: "1500",
+          boxShadow: "0 2px 2px -2px #113d48",
+        }}
+      >
         <div className="col-3">
           <img src="/geomic-logo.png" className="img-logo ms-4" alt="" />
         </div>

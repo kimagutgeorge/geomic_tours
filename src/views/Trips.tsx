@@ -15,7 +15,7 @@ const Trips = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 2500);
+    }, 2000);
   }, []);
   return (
     <>
