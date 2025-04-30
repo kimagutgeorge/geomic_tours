@@ -11,22 +11,41 @@ import Testimonial from "../components/Testimonial";
 import Footer from "../components/Footer";
 import BackToTop from "../components/BackToTop";
 import BlogCarousel from "../components/BlogSlider";
+import Spinner from "../components/spiner/spiner";
+import { useEffect, useState } from "react";
+
 function Home() {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2500);
+  }, []);
+
   return (
     <>
-      <Navbar />;
-      <Slider />
-      <Categories />
-      <Destinations />
-      <PlanTour />
-      <DestinationCarousel />
-      <Gallery />
-      <Stats />
-      <Testimonial />
-      <BlogCarousel />
-      <Footer />
-      <BackToTop />
+      {loading ? (
+        <Spinner />
+      ) : (
+        <>
+          <Navbar />
+          <Slider />
+          <Categories />
+          <Destinations />
+          <PlanTour />
+          <DestinationCarousel />
+          <Gallery />
+          <Stats />
+          <Testimonial />
+          <BlogCarousel />
+          <Footer />
+          <BackToTop />
+        </>
+      )}
     </>
   );
 }
+
 export default Home;
