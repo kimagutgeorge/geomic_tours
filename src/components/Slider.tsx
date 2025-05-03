@@ -35,8 +35,8 @@ const Slider = () => {
                 button_span_color="text-white"
               />
               <DefaultButton
-                button_text="Explore Tours"
-                button_link="/trips"
+                button_text="Contact us"
+                button_link="/contact-us"
                 button_icon="icon"
                 button_classname="w-fit btn-default-white ms-4"
                 button_icon_color="light-svg in-btn"
@@ -70,8 +70,8 @@ const Slider = () => {
                 button_span_color="text-white"
               />
               <DefaultButton
-                button_text="Explore Tours"
-                button_link="/trips"
+                button_text="Contact us"
+                button_link="/contact-us"
                 button_icon="icon"
                 button_classname="w-fit btn-default-white ms-4"
                 button_icon_color="light-svg in-btn"
@@ -105,8 +105,8 @@ const Slider = () => {
                 button_span_color="text-white"
               />
               <DefaultButton
-                button_text="Explore Tours"
-                button_link="/trips"
+                button_text="Contact us"
+                button_link="/contact-us"
                 button_icon="icon"
                 button_classname="w-fit btn-default-white ms-4"
                 button_icon_color="light-svg in-btn"

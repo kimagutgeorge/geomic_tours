@@ -10,7 +10,7 @@ const Spinner = () => {
         <div className="h-100 d-flex flex-column justify-content-center flex-no-wrap">
           <div className="w-100 d-flex flex-row justify-content-center">
             <div
-              className="spinner-border"
+              className="spinner-border text-primary"
               style={{ width: "3rem", height: "3rem" }}
               role="status"
             >

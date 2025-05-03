@@ -83,6 +83,9 @@ input[type=range]{
 .my-icon{
     color:  #f58826;
 }
+.bg-icon{
+    background-color: #f58826;
+}
 .dft-color{
     color: #2d2c2c !important;
     transition: 0.3s ease-in-out;
@@ -971,6 +974,15 @@ button.btn.bg-primary:hover{
     padding: 0px 20px;
     width: calc(100% - 40px);
 }
+.phone-bar{
+    width: 400px;
+    border-right: 4px solid #113d48;
+    /* display: none !important; */
+}
+.dark-panel{
+    /* display: none !important; */
+}
+
 .footer-bottom .categories{
     margin-top: 0px;
 }
@@ -1447,6 +1459,9 @@ form .contact-card .col-12 textarea{
         opacity: 1;  
     }
 }
+.nav-bar-bottom .col-3:last-child .fa-bars{
+    display: none;
+}
 
 
 
@@ -1454,6 +1469,28 @@ form .contact-card .col-12 textarea{
 
 
   /* responsiveness */
-@media only screen and (max-width: 1225px) {
+@media only screen and (max-width: 1215px) {
+    /* .nav-bar-bottom .col-3:first-child, */
+    .nav-bar-bottom .col-6,
+    .nav-bar-bottom .col-3:last-child .btn-default-dark{
+        display: none !important;
+    }
+    .nav-bar-bottom .col-3{
+        
+        width: 50% !important;
+    }
+    .nav-bar-bottom .col-3:last-child{
+        display: flex;
+        justify-content: end;
+    }
+    .nav-bar-bottom .col-3:last-child .fa-bars{
+        display: block;
+    }
+    .img-logo{
+        width: 150px !important;
+    }
+   
+}
+@media only screen and (max-width: 1040px) {
     
 }
